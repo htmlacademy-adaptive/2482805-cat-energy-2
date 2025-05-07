@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__list-item {
+  border-top: 1px solid #e6e6e6;
+}
+
+.nav__link {
+  display: block;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 22px 0;
+}

@@ -1,0 +1,157 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 26px 0 21px;
+  background-color: $secondary-color;
+}
+
+.contacts__address {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: $primary-color;
+}
+
+.address__title {
+  width: 160px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: start;
+  color: #111111;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.address__info {
+  width: 160px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: start;
+  margin: 0;
+  padding-right: 20px;
+}
+
+.contacts__map {
+  width: 100%;
+  margin-top: 26px;
+  position: relative;
+}
+
+.map__image {
+  min-width: 100%;
+  object-fit: cover;
+}
+
+
+.map__image-mark {
+  position: absolute;
+  top: 38%;
+  left: 42%;
+}
+
+.contacts__links-wrapper {
+  @media (width >=1440px) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.contacts__links {
+  width: 100%;
+  list-style-type: none;
+  padding: 0 20px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.contacts-links__item {
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-around;
+  border-bottom: 1px solid #d9d9d9;
+
+
+  &:last-child {
+    justify-content: space-between;
+    border-bottom: none;
+  }
+}
+
+.contacts-links__link-index {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin-bottom: 20px;
+  background-image: url(../../images/logo-text-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.contacts-links__social {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  column-gap: 24px;
+}
+
+.social__link {
+  display: block;
+  width: 28px;
+  height: 28px;
+
+  &--vk {
+    background-image: url(../../icons/vkontakte.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  &--youtube {
+    background-image: url(../../icons/youtube.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+
+  &--telegram {
+    background-image: url(../../icons/telegram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+}
+
+.contacts-links__academy {
+  display: flex;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    display: flex;
+    width: 27px;
+    height: 34px;
+    background-image: url(../../icons/html-academy.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+}

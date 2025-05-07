@@ -1,0 +1,47 @@
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.subscribe__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-align: start;
+  margin: 0;
+}
+
+.subscribe__description {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.subscribe__email {
+  padding-top: 24px;
+}
+
+.email__field {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 13px;
+  outline: 1px solid #cdcdcd;
+  border: none;
+}
+
+.email__button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 15px 0;
+}

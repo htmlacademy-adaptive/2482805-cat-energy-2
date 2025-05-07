@@ -1,0 +1,85 @@
+.programs-types {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.programs-types__list {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.programs-types__list-item {
+  background-color: $secondary-color;
+  padding: 1px;
+  margin-bottom: 20px;
+
+  &--skinny {
+    background-image: url(../../icons/cat-skinny.svg);
+    background-position: 20px 21px;
+    background-repeat: no-repeat;
+    background-size: 50px 53px;
+  }
+
+
+  &--muscle {
+    background-image: url(../../icons/cat-muscle.svg);
+    background-position: 20px 21px;
+    background-repeat: no-repeat;
+    background-size: 67px 50px;
+    }
+}
+
+.programs-types__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 90px;
+  text-align: start;
+}
+
+.programs-types__description {
+  width: 227px;
+  text-align: start;
+  margin: 0 auto;
+  margin-top: 22px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.programs-types__link {
+  display: block;
+  position: relative;
+  width: 134px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 15px 0 18px;
+
+
+  &::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 12px;
+    left: 122px;
+    background-image: url(../../icons/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 12px;
+    background-position: center;
+    width: 32px;
+    height: 21px;
+  }
+}
