@@ -9,6 +9,31 @@
   background-size: 100%;
     background-repeat: no-repeat;
   background-position: top;
+
+  @media (width >= 768px) {
+    width: 768px;
+    position: relative;
+    padding: 65px 30px 526px;
+    background-color: $primary-color;
+    background-image: none;
+    margin: 0 auto;
+  }
+
+
+  @media (width >= 1440px) {
+    width: 1220px;
+    position: relative;
+    padding: 110px 80px 184px;
+  }
+}
+
+.hero-wrapper {
+    padding: 0 20px;
+
+  @media (width >= 768px) {
+    padding: 0;
+    padding-left: 90px;
+  }
 }
 
 .hero__title {
@@ -20,6 +45,26 @@
   color: #ffffff;
   margin: 0 auto;
   margin-top: 27px;
+
+
+  @media (width >=768px) {
+    width: 416px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: start;
+    margin: 0;
+  }
+
+
+  @media (width >=1440px) {
+    width: 414px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: start;
+    margin: 0;
+  }
 }
 
 .hero__description {
@@ -32,6 +77,28 @@
   color: #ffffff;
   margin: 0 auto;
   margin-top: 25px;
+
+
+  @media (width >=768px) {
+    width: 300px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: start;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+
+  @media (width >=1440px) {
+    width: 300px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: start;
+    margin: 0;
+    margin-top: 40px;
+  }
 }
 
 .hero__image {
@@ -39,8 +106,42 @@
   width: 280px;
   margin: 0 auto;
   margin-top: 29px;
+
+
+  @media (width >=768px) {
+    width: 709px;
+    position: absolute;
+    top: 266px;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+  }
+
+
+  @media (width >=1140px) {
+    width: 552px;
+    position: absolute;
+    top: 29px;
+    left: 447px;
+  }
 }
 
 .hero__button {
   margin-top: 3px;
+
+
+  @media (width >=768px) {
+    position: relative;
+    width: 244px;
+    margin-top: 50px;
+    padding: 17px 0;
+    z-index: 2;
+  }
+
+
+  @media (width >=1440px) {
+    width: 244px;
+    margin-top: 52px;
+    padding: 14px 0;
+  }
 }

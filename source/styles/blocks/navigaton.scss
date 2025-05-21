@@ -10,10 +10,27 @@ nav {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  
+
+  @media (width >= 768px) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 436px;
+    justify-content: space-between;
+  }
+
+  @media (width >= 1440px) {
+    background-color: $special-color;
+}
 }
 
 .nav__list-item {
   border-top: 1px solid #e6e6e6;
+
+  @media (width >= 768px) {
+    border: none;
+  }
 }
 
 .nav__link {
@@ -26,4 +43,21 @@ nav {
   text-transform: uppercase;
   color: #000000;
   padding: 22px 0;
+
+  @media (width >= 768px) {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 0;
+  }
+
+  @media (width >= 1440px) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+    padding-bottom: 8px;
+
+    &--index {
+      color: #FFFFFF;
+    }
+  }
 }

@@ -4,6 +4,19 @@
   flex-direction: column;
   padding: 10px 20px;
   margin: 0 auto;
+
+
+  @media (width >= 768px) {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+
+  @media (width >= 1440px) {
+    width: 1220px;
+    padding: 82px 0 0;
+    margin: 0 auto;
+  }
 }
 
 .programs-types__list {
@@ -11,6 +24,18 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  
+  @media (width >= 768px) {
+    padding: 0;
+  }
+
+
+  @media (width >= 1440px) {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+  }
 }
 
 .programs-types__list-item {
@@ -32,6 +57,19 @@
     background-repeat: no-repeat;
     background-size: 67px 50px;
     }
+
+
+  @media (width >= 768px) {
+    width: 100%;
+    padding: 77px 93px 57px 82px;
+    margin-bottom: 30px;
+  }
+
+
+  @media (width >= 1440px) {
+    width: 570px;
+    padding: 77px 61px 59px 52px;
+  }
 }
 
 .programs-types__title {
@@ -45,6 +83,26 @@
   margin-top: 30px;
   margin-left: 90px;
   text-align: start;
+
+
+  @media (width >= 768px) {
+    width: 100%;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  @media (width >= 1440px) {
+    width: 100%;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .programs-types__description {
@@ -54,6 +112,27 @@
   margin-top: 22px;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
+
+
+  @media (width >= 768px) {
+    width: 48%;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    margin-top: 24px;
+    border-bottom: none;
+  }
+
+
+  @media (width >= 1440px) {
+    width: 100%;
+    text-align: start;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    margin-top: 73px;
+    border-bottom: none;
+  }
 }
 
 .programs-types__link {
@@ -68,7 +147,7 @@
   color: #000000;
   padding: 15px 0 18px;
 
-
+  
   &::after {
     content: "";
     display: flex;
@@ -81,5 +160,21 @@
     background-position: center;
     width: 32px;
     height: 21px;
+  }
+
+  @media (width >= 768px) {
+    width: 40%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+    margin-top: 52px;
+  }
+
+
+  @media (width >= 1440px) {
+    width: 168px;
+    margin-top: 23px;
   }
 }
