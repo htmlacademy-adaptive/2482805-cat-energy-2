@@ -15,8 +15,30 @@
 
   @media (width >= 1440px) {
     width: 100%;
+    position: relative;
     padding: 55px 110px 0;
     align-items: flex-end;
+  }
+}
+
+.index-header {
+
+  @media (width >= 1440px) {
+    width: 100%;
+    position: relative;
+    padding: 55px 110px 0;
+    align-items: flex-end;
+    background-image: linear-gradient( to right, $primary-color 50%, rgba(104, 183, 56, 0.85) 50% 100%);
+
+    &::before {
+      content: url(../../images/desktop/hero-background-desktop@1x.png);
+      width: 720px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      overflow: hidden;
+    }
   }
 }
 

@@ -25,7 +25,7 @@
   padding: 0;
   margin: 0;
 
-  
+
   @media (width >= 768px) {
     padding: 0;
   }
@@ -63,16 +63,47 @@
     width: 100%;
     padding: 77px 93px 57px 82px;
     margin-bottom: 30px;
+
+
+    &--skinny {
+      background-image: url(../../icons/cat-skinny.svg);
+      background-position: 445px 81px;
+      background-repeat: no-repeat;
+      background-size: 200px 211px;
+    }
+
+    &--muscle {
+      background-image: url(../../icons/cat-muscle.svg);
+      background-position: 445px 81px;
+      background-repeat: no-repeat;
+      background-size: 200px 211px;
+  }
   }
 
 
   @media (width >= 1440px) {
     width: 570px;
     padding: 77px 61px 59px 52px;
+
+
+    &--skinny {
+      background-image: url(../../icons/cat-skinny.svg);
+      background-position: 52px 41px;
+      background-repeat: no-repeat;
+      background-size: 100px 106px;
+    }
+
+    &--muscle {
+      background-image: url(../../icons/cat-muscle.svg);
+      background-position: 52px 41px;
+      background-repeat: no-repeat;
+      background-size: 134px 100px;
+  }
   }
 }
 
 .programs-types__title {
+  display: block;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -102,6 +133,7 @@
     text-align: start;
     padding: 0;
     margin: 0;
+    margin-left: 214px;
   }
 }
 
@@ -147,7 +179,7 @@
   color: #000000;
   padding: 15px 0 18px;
 
-  
+
   &::after {
     content: "";
     display: flex;
@@ -160,7 +192,13 @@
     background-position: center;
     width: 32px;
     height: 21px;
+
+
+    @media (width >= 768px) {
+      top: 5px;
+    }
   }
+
 
   @media (width >= 768px) {
     width: 40%;

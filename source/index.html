@@ -39,21 +39,21 @@
           </ul>
         </nav>
       </div>
-    </header>
-    <main class="main-container container">
       <section class="hero">
         <div class="hero-wrapper">
           <h1 class="hero__title">Функциональное питание для котов</h1>
           <p class="hero__description">Занялся собой? Займись котом!</p>
           <picture>
-            <source>
-            <source>
+            <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/desktop/title-can-desktop@1x.png 1x, images/desktop/title-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/tablet/title-can-tablet@1x.png 1x, images/tablet/title-can-tablet@2x.png 2x">
             <img class="hero__image" width="280" height="270" src="images/mobile/title-can-mobile@1x.png"
-              srcset="images/moblie/title-can-mobile@2x.png 2x" alt="Продкуция Cat Energy">
+              srcset="images/mobile/title-can-mobile@2x.png 2x" alt="Продкуция Cat Energy">
           </picture>
           <a class="hero__button button">Подобрать программу</a>
         </div>
       </section>
+    </header>
+    <main class="main-container container">
       <section class="programs-types">
         <h2 class="visually-hidden">Виды программ</h2>
         <ul class="programs-types__list">
@@ -121,16 +121,16 @@
           <div class="example__proof proof">
             <div class="proof__image-wrapper">
               <picture>
-                <source media="(min-width 1440px)" type="#" srcset="#">
-                <source media="(min-width 768px)" type="#" srcset="#">
+                <source media="(min-width: 1440px)" type="#" srcset="#">
+                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/tablet/example/cat-before-tablet@1x.png 1x, images/tablet/example/cat-before-tablet@2x.png 2x">
                 <img class="proof__image" width="280" height="256" src="images/mobile/example/cat-before-mobile@1x.png"
                   srcset="images/mobile/example/cat-before-mobile@2x.png 2x" alt="Фотография кота до программы.">
               </picture>
             </div>
             <div class="proof__image-wrapper--after">
               <picture>
-                <source media="(min-width 1440px)" type="#" srcset="#">
-                <source media="(min-width 768px)" type="#" srcset="#">
+                <source media="(min-width: 1440px)" type="#" srcset="#">
+                <source media="(min-width: 768px)" width="560" height="512"  type="image/png" srcset="images/tablet/example/cat-after-tablet@1x.png 1x, images/tablet/example/cat-after-tablet@2x.png 2x">
                 <img class="proof__image" width="280" height="256" src="images/mobile/example/cat-after-moblie@1x.png"
                   srcset="images/mobile/example/cat-after-moblie@2x.png 2x" alt="Фотография кота после программы.">
               </picture>
@@ -153,22 +153,16 @@
         </div>
         <div class="contacts__map map">
           <picture>
-            <source media="(min-width 1440px)" width="1440" height="400" type="#" srcset="#">
-            <source media="min-width 768px" width="768" height="400" type="#" srcset="#">
-            <img class="map__image" width="320" height="362" src="images/mobile/map/map-mobile@1x.png"
+            <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/desktop/map/map-desktop@1x.png 1x, images/desktop/map/map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/tablet/map/map-tablet@1x.png 1x, images/tablet/map/map-tablet@2x.png 2x">
+            <img class="map__image" width="320" height="362" src="images/mobile/map/map-mobile@1x.png 1x, images/mobile/map/map-mobile@2x.png 2x"
               srcset="images/mobile/map/map-mobile@2x.png 2x" alt="Карта города.">
-          </picture>
-          <picture>
-            <source media="(min-width 1440px)" width="113" height="106" type="#" srcset="#">
-            <source media="min-width 768px" width="113" height="106" type="#" srcset="#">
-            <img class="map__image-mark" width="57" height="53" src="images/mobile/map/map-marker-mobile@1x.png"
-              srcset="images/mobile/map/map-marker-mobile@2x.png 2x" alt="Место расположения Cat Energy.">
           </picture>
         </div>
         <ul class="contacts__links contacts-links">
           <li class="contacts-links__item">
             <h2 class="visually-hidden">Наши ссылки</h2>
-            <a class="contacts-links__link-index" href="index.html">
+            <a class="contacts-links__link-index" href="index.html">CAT ENERGY
               <span class="visually-hidden">Cat Energy</span>
             </a>
           </li>

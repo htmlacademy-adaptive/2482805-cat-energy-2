@@ -23,7 +23,8 @@
   @media (width >= 1440px) {
     width: 1220px;
     position: relative;
-    padding: 110px 80px 184px;
+    padding: 110px 80px 146px;
+    background-color: transparent;
   }
 }
 
@@ -112,13 +113,13 @@
     width: 709px;
     position: absolute;
     top: 266px;
-    left: 0;
+    left: 30px;
     margin: 0;
     z-index: 1;
   }
 
 
-  @media (width >=1140px) {
+  @media (width >=1440px) {
     width: 552px;
     position: absolute;
     top: 29px;

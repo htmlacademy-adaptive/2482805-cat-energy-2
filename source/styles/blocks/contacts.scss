@@ -100,26 +100,7 @@
 
 
   @media (width >= 1440px) {
-    height: 400px;
     padding: 10px 0 10px 0;
-  }
-}
-
-.map__image {
-  min-width: 100%;
-  object-fit: cover;
-}
-
-
-.map__image-mark {
-  position: absolute;
-  top: 38%;
-  left: 42%;
-
-  
-  @media (width >=768px) {
-    top: 146px;
-    left: 313px;
   }
 }
 
@@ -128,6 +109,11 @@
     width: 1220px;
     margin: 0 auto;
   }
+}
+
+.map__image {
+  width: 100%;
+  object-fit: cover;
 }
 
 .contacts__links {

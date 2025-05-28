@@ -59,6 +59,7 @@
 
 .product-features__item {
   display: flex;
+  position: relative;
   width: 100%;
   margin: 0;
   margin-top: 20px;
@@ -69,13 +70,21 @@
 
   &::before {
     content: "";
+    display: flex;
     width: 60px;
     height: 60px;
-    display: flex;
     background-color: $special-color;
     background-image: url(../../icons/leaf.svg);
     background-position: 50%;
     background-repeat: no-repeat;
+
+
+    @media (width >= 768px) {
+    position: absolute;
+    top: 40px;
+    width: 80px;
+    height: 80px;
+    }
   }
 
   &--eat {
@@ -127,4 +136,9 @@
 .product-features__text {
   width: 200px;
   margin: 0;
+
+
+  @media (width >= 768px) {
+    width: 204px;
+  }
 }
