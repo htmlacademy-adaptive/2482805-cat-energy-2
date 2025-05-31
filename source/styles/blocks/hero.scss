@@ -5,7 +5,7 @@
   padding: 14px 20px 10px;
   background-color: $special-color;
   background-image:
-    linear-gradient(#68b738d9 0% 61.5%, #fff 61.5% 100%),
+    linear-gradient(rgba(104, 183, 56, 0.85) 0% 61.5%, #ffffff 61.5% 100%),
     image-set("../images/mobile/hero-background-mobile@1xjpg" 1x type("image/jpg"), "../images/mobile/hero-background-mobile@2x.jpg" 2x type("image/jpg"));
   background-size: 100%;
   background-repeat: no-repeat;
@@ -30,7 +30,6 @@
 }
 
 .hero-wrapper {
-
   @media (width >= 768px) {
     padding-left: 60px;
   }
