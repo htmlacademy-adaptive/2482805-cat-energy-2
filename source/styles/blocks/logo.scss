@@ -1,7 +1,7 @@
 .logo {
-  width: 190px;
-  justify-content: space-between;
+  width: fit-content;
   padding-left: 20px;
+  padding-bottom: 11px;
 
   @media (width >= 768px) {
     width: 174px;
@@ -11,6 +11,5 @@
 
 .logo__link {
   display: flex;
-  width: 190px;
   justify-content: space-between;
 }

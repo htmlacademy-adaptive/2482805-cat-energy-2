@@ -1,7 +1,7 @@
 .button {
   width: 100%;
   background-color: $special-color;
-  font-family: "Oswald";
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -10,4 +10,22 @@
   padding: 10px 0;
   margin: 0;
   border: 0;
+
+  &:hover {
+    background-color: #5EAA2F;
+  }
+
+  &:focus {
+    background-color: #5EAA2F;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 0.1);
+  }
 }

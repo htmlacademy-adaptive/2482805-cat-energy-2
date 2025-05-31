@@ -6,7 +6,12 @@
   justify-content: space-between;
 
 
-    @media (width <= 767px) {
+  @media (width >= 767px) {
+    position: relative;
+    margin: 0;
+  }
+
+  @media (width >= 1440px) {
     position: relative;
   }
 }

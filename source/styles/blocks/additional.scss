@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0 20px;
+  padding: 10px 20px 0;
   margin: 0 auto;
 
 
   @media (width >= 768px) {
     width: 100%;
-    padding: 0 30px;
+    padding: 54px 30px 0;
   }
 
 
@@ -16,31 +16,63 @@
     width: 100%;
     padding: 0 110px;
     flex-wrap: wrap;
-}
+  }
 }
 
 .additional__title {
-  font-family: "Oswald", sans-serif;
+  width: fit-content;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  position: relative;
+  background-color: $primary-color;
   margin: 0;
   text-align: start;
+  box-shadow: 40px 0 #ffffff, -40px 0 #ffffff;
 
 
   @media (width >= 768px) {
+    width: fit-content;
     font-size: 32px;
     line-height: 32px;
+    margin-left: 40px;
+  }
+
+  @media (width >= 1440px) {
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 2px;
+    background-color: $special-color;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: -1;
+    box-shadow: 100vw 0 $special-color;
+
+    @media (width >= 768px) {
+      top: 14px;
+    }
   }
 }
 
 .additional-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
 
   @media (width >= 1440px) {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+    margin: 0;
   }
 }
 
@@ -50,7 +82,8 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-top: 36px;
+  margin-top: 35px;
+  border-top: 1px solid #CDCDCD;
 
 
   @media (width >= 768px) {
@@ -67,11 +100,11 @@
 
 .additional__item {
   padding-bottom: 19px;
-  border-bottom: 1px solid #ebebeb;
+  outline: 1px solid #CDCDCD;
 
 
   @media (width >= 768px) {
-    padding: 26px 38px 28px;
+    padding: 26px 40px 28px 38px;
   }
 
   @media (width >= 1440px) {
@@ -90,9 +123,13 @@
   display: flex;
   flex-wrap: wrap;
   text-align: start;
-  row-gap: 13px;
   justify-content: space-between;
   margin: 0;
+
+  @media (width >= 768px) {
+    width: 100%;
+    justify-content: left;
+  }
 
 
   @media (width >= 1440px) {
@@ -102,7 +139,7 @@
 
 .additional__termin {
   width: 100%;
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -113,9 +150,11 @@
 
 
   @media (width >= 768px) {
-    width: 50%;
+    width:  fit-content;
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
+    margin-right: auto;
   }
 
 
@@ -132,10 +171,14 @@
 
 
   @media (width >= 768px) {
-    width: 25%;
+    width: fit-content;
     font-size: 16px;
     line-height: 20px;
-    text-align: end;
+    text-align: start;
+
+    &--price {
+      margin-left: 8%;
+    }
   }
 }
 
@@ -155,12 +198,12 @@
   }
 }
 
-.addtional__gift {
-  margin-top: 20px;
+.additional__gift {
+  margin-top: 34px;
   padding: 59px 0 43px;
   background-color: $special-color;
   border-top: 1px solid #cdcdcd;
-  background-image: linear-gradient(#68b738d9, #68b738d9), url(../../images/mobile/gift-background-mobile@1x.jpg);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/mobile/gift-background-mobile@1x.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -168,7 +211,7 @@
 
   &::before {
     content: "";
-    background-image: url(../../icons/gift.svg);
+    background-image: url("../../icons/gift.svg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: 78px 80px;
@@ -176,13 +219,18 @@
     height: 80px;
     display: block;
     margin: 0 auto;
+
+    @media (width >= 768px) {
+      margin-left: 79px;
+    }
   }
 
 
   @media (width >= 768px) {
+    display: flex;
     margin-top: 70px;
-    padding: 5px 0 5px 0;
-    background-image: linear-gradient(#68b738d9, #68b738d9), url(../../images/tablet/gift-background-tablet@1x.png);
+    padding: 56px 0 62px 0;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/tablet/gift-background-tablet@1x.png");
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -191,9 +239,9 @@
 
   @media (width >= 1440px) {
     width: 245px;
-    padding: 49px 0 49px 0;
+    padding: 49px 0;
     margin: 0;
-    background-image: linear-gradient(#68b738d9, #68b738d9), url(../../images/desktop/gift-background-desktop@1x.png);
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/desktop/gift-background-desktop@1x.png");
   }
 }
 
@@ -202,12 +250,12 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  margin: 0 auto;
-  margin-top: 49px;
+  margin: 47px auto 0;
 
 
   @media (width >= 768px) {
     text-align: start;
+    margin: 13px 125px 0 auto;
   }
 
   @media (width >= 1440px) {

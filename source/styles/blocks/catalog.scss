@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 14px 20px;;
+  padding: 14px 20px;
   margin: 0 auto;
 
 
   @media (width >= 768px) {
     width: 100%;
-    padding: 0 30px;
+    padding: 36px 30px 0;
   }
 
 
@@ -29,6 +29,8 @@
   text-align: start;
   margin: 0;
   padding: 0;
+  padding-bottom: 40px;
+
 
 
   @media (width >= 768px) {
@@ -42,11 +44,14 @@
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 
 
   @media (width >= 768px) {
-    margin-top: 84px;
+    margin-top: 55px;
     gap: 60px;
+    row-gap: 70px;
+    padding-bottom: 20px;
   }
 }
 
@@ -54,15 +59,15 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 20px 0 24px;
   border-top: 1px solid #ebebeb;
-  justify-content: space-around;
+  justify-content: space-between;
 
   @media (width >= 768px) {
     width: 324px;
     flex-direction: column;
     padding: 0 37px 40px;
-    background-image: linear-gradient(to bottom, $primary-color 10%, $secondary-color 10% 90%);
+    background-image: linear-gradient(to bottom, $primary-color 0% 14%, $secondary-color 14% 90%);
     border-top: none;
   }
 
@@ -77,12 +82,14 @@
 
 
   &--more {
+    display: flex;
+    flex-direction: column;
 
     @media (width >= 768px) {
-      display: flex;
-      flex-direction: column;
       background-image: none;
       justify-content: flex-start;
+      outline: 2px solid $secondary-color;
+      margin-top: 73px;
     }
   }
 }
@@ -96,26 +103,61 @@
   }
 
   &--more {
+    position: relative;
 
     @media (width >= 768px) {
       display: block;
       width: 170px;
-      margin: 50px auto 0 auto;
+      margin: 48px auto 0;
       padding-top: 110px;
     }
   }
 }
 
-.card__image {
-  display: block;
-  margin: auto auto;
+.card__link--more::before {
+  content: "";
+  mask-image: url("../../icons/stack.svg#view-more-icon");
+  mask-size: 100%;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 4px;
+  left: 45%;
+  background-color: #D3D3D3;
 
   @media (width >= 768px) {
-    width: 161px;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 55px;
+}
+}
+
+.card__image {
+  display: block;
+  margin: 2px 0 0 28px;
+
+&--small {
+  margin: 10px 0 0 36px;
+}
+
+  @media (width >= 768px) {
+    width: 170px;
+    margin: 1px 0 0 40px;
+
+    &--small {
+      width: 169px;
+      margin: 18px 0 14px 40px;
+    }
   }
 
   @media (width >= 1440px) {
     width: 161px;
+
+    &--small {
+    }
   }
 }
 
@@ -148,7 +190,9 @@
   @media (width >= 768px) {
     font-size: 16px;
     line-height: 20px;
-    border-bottom: 1px solid #CDCDCD;
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 4px;
+    margin-bottom: 7px;
   }
 }
 
@@ -161,8 +205,7 @@
   text-transform: uppercase;
   color: #222222;
   text-align: start;
-  margin: 0;
-  margin-bottom: 14px;
+  margin: 2px 0 14px 1px;
 
 
   @media (width >= 768px) {
@@ -170,28 +213,32 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    margin: 0 auto;
+    margin: 24px auto 20px;
+    padding-right: 1px;
   }
 
-  @media (width >= 768px) {
+  @media (width >= 1440px) {
     margin: 20px auto 22px;
   }
 }
 
 .card__title--more {
   display: block;
-  min-width: 204px;
+  width: 210px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: #000000;
-  margin: 53px 0 0 58px;
+  margin: 59px auto 0;
 
 
   @media (width >= 768px) {
-    min-width: 134px;
+    width: 136px;
+    font-size: 20px;
+    line-height: 24px;
     margin: 0 auto;
   }
 }
@@ -216,19 +263,37 @@
 }
 
 .card__button {
-  margin-top: 17px;
+  margin-top: 20px;
 
 
   @media (width >= 768px) {
     width: 250px;
     margin: 0 auto;
-    margin-top: 32px;
+    margin-top: 26px;
   }
 
   &--more {
     margin-top: 21px;
     color: #444444;
     background-color: $secondary-color;
+
+    &:hover {
+      background-color: #EBEBEB;
+    }
+
+    &:focus {
+      background-color: #EBEBEB;
+      outline: none;
+    }
+
+    &:active {
+      color: #444444;
+    }
+
+    &:disabled {
+      background-color: rgba(0, 0, 0, 1);
+      color: rgba(68, 68, 68, 0.1);
+    }
 
     @media (width >= 768px) {
       margin-top: 82px;

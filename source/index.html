@@ -10,12 +10,12 @@
 
   <body class="page__body">
     <header class="header index-header">
-      <div class="wrapper">
+      <div class="wrapper nav-wrapper">
         <div class="header__logo logo">
           <a class="logo__link" href="index.html">
             <picture>
-              <source media="(min-width: 1440px)" width="#" height="#" type="#" srcset="#">
-              <source media="(min-width: 768px)" width="#" height="#" type="#" srcset="#">
+              <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/desktop/logo-desktop.svg">
+              <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/tablet/logo-tablet.svg">
               <img class="logo__picture" width="33" height="38" src="images/mobile/logo-mobile.svg"
                 alt="Логотип Cat Energy">
             </picture>
@@ -49,7 +49,7 @@
             <img class="hero__image" width="280" height="270" src="images/mobile/title-can-mobile@1x.png"
               srcset="images/mobile/title-can-mobile@2x.png 2x" alt="Продкуция Cat Energy">
           </picture>
-          <a class="hero__button button">Подобрать программу</a>
+          <a class="hero__button button" href="#">Подобрать программу</a>
         </div>
       </section>
     </header>
@@ -90,7 +90,7 @@
               функциональное питание.</p>
           </li>
           <li class="product-features__item product-features__item--upgrade">
-            <p class="product-features__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="product-features__text">Уже через месяц наслаждайтесь изменениями к лучшему<br class="break">вашего питомца!</p>
           </li>
         </ol>
       </section>
@@ -105,12 +105,12 @@
               часов в день.</p>
             <div class="example__result-info">
               <dl class="example__result-list">
-                <dt class="example__result-termin"> 5 кг</dt>
-                <dd class="example__result-description">Снижение веса</dd>
+                <dt class="example__result-termin">5 кг</dt>
+                <dd class="example__result-description">cнижение веса</dd>
               </dl>
               <dl class="example__result-list">
                 <dt class="example__result-termin">60 дней</dt>
-                <dd class="example__result-description">Затрачено времени</dd>
+                <dd class="example__result-description">затрачено времени</dd>
               </dl>
             </div>
             <p class="example__result-price">
@@ -123,15 +123,15 @@
               <picture>
                 <source media="(min-width: 1440px)" type="#" srcset="#">
                 <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/tablet/example/cat-before-tablet@1x.png 1x, images/tablet/example/cat-before-tablet@2x.png 2x">
-                <img class="proof__image" width="280" height="256" src="images/mobile/example/cat-before-mobile@1x.png"
+                <img class="proof__image proof__image--before" width="280" height="256" src="images/mobile/example/cat-before-mobile@1x.png"
                   srcset="images/mobile/example/cat-before-mobile@2x.png 2x" alt="Фотография кота до программы.">
               </picture>
             </div>
-            <div class="proof__image-wrapper--after">
+            <div class="proof__image-wrapper proof__image-wrapper--after">
               <picture>
                 <source media="(min-width: 1440px)" type="#" srcset="#">
                 <source media="(min-width: 768px)" width="560" height="512"  type="image/png" srcset="images/tablet/example/cat-after-tablet@1x.png 1x, images/tablet/example/cat-after-tablet@2x.png 2x">
-                <img class="proof__image" width="280" height="256" src="images/mobile/example/cat-after-moblie@1x.png"
+                <img class="proof__image proof__image--after" width="280" height="256" src="images/mobile/example/cat-after-moblie@1x.png"
                   srcset="images/mobile/example/cat-after-moblie@2x.png 2x" alt="Фотография кота после программы.">
               </picture>
             </div>
@@ -146,23 +146,24 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__address address">
-          <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="address__info">ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+          <h3 class="address__title">Приглашаем<br>к сотрудничеству дилеров!</h3>
+          <p class="address__info">
+            <span class="address__info address__info--street">ул. Большая
+            Конюшенная, д. 19/8</span>
+            <span class="address__info address__info--city">Санкт-Петербург</span></p>
         </div>
         <div class="contacts__map map">
           <picture>
             <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/desktop/map/map-desktop@1x.png 1x, images/desktop/map/map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/tablet/map/map-tablet@1x.png 1x, images/tablet/map/map-tablet@2x.png 2x">
-            <img class="map__image" width="320" height="362" src="images/mobile/map/map-mobile@1x.png 1x, images/mobile/map/map-mobile@2x.png 2x"
+            <img class="map__image" width="320" height="362" src="images/mobile/map/map-mobile@1x.png"
               srcset="images/mobile/map/map-mobile@2x.png 2x" alt="Карта города.">
           </picture>
         </div>
         <ul class="contacts__links contacts-links">
           <li class="contacts-links__item">
             <h2 class="visually-hidden">Наши ссылки</h2>
-            <a class="contacts-links__link-index" href="index.html">CAT ENERGY
+            <a class="contacts-links__link-index" href="index.html">
               <span class="visually-hidden">Cat Energy</span>
             </a>
           </li>
@@ -187,6 +188,7 @@
           </li>
           <li class="contacts-links__item">
             <a class="contacts-links__academy" href="https://htmlacademy.ru/">HTML Academy</a>
+            <span class="visually-hidden">HTML Academy</span>
           </li>
         </ul>
       </section>

@@ -2,13 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 14px 0;
+  padding: 14px 0 1px;
   flex-grow: 1;
   justify-content: space-between;
 
   @media (width >= 768px) {
     width: 100%;
-    padding: 25px 30px 0;
+    padding: 30px 30px 30px;
     align-items: flex-end;
   }
 
@@ -22,20 +22,20 @@
 }
 
 .index-header {
-
   @media (width >= 1440px) {
     width: 100%;
     position: relative;
-    padding: 55px 110px 0;
+    padding: 72px 110px 0;
     align-items: flex-end;
-    background-image: linear-gradient( to right, $primary-color 50%, rgba(104, 183, 56, 0.85) 50% 100%);
+    background-image: linear-gradient(to right, $primary-color 50%, rgba(104, 183, 56, 0.85) 50% 100%);
 
     &::before {
-      content: url(../../images/desktop/hero-background-desktop@1x.png);
-      width: 720px;
+      content: url("../../images/desktop/hero-background-desktop@1x.png");
+      width: 50%;
+      height: 693px;
       position: absolute;
+      left: 50%;
       top: 0;
-      right: 0;
       z-index: -1;
       overflow: hidden;
     }
@@ -46,8 +46,41 @@
   width: 24px;
   min-width: 24px;
   height: 24px;
+  margin-right: 17px;
 
   @media (width >= 768px) {
     display: none;
+  }
+}
+
+.header__logo {
+  position: relative;
+}
+
+.logo__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo__picture {
+  @media (width >= 768px) {
+    position: absolute;
+    left: 0;
+    top: -100%;
+  }
+
+  @media (width >= 1440px) {
+    position: absolute;
+    left: 0;
+    top: -17px;
+  }
+}
+
+.logo__text {
+  @media (width >= 1440px) {
+    width: 118px;
+    height: 25px;
+    margin-left: 83px;
   }
 }

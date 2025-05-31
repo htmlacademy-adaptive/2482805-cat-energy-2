@@ -4,10 +4,11 @@
   width: 100%;
   padding: 14px 20px 10px;
   background-color: $special-color;
-  background-image: linear-gradient(#68b738d9 60%, #fff 60%),
+  background-image:
+    linear-gradient(#68b738d9 0% 61.5%, #fff 61.5% 100%),
     image-set("../images/mobile/hero-background-mobile@1xjpg" 1x type("image/jpg"), "../images/mobile/hero-background-mobile@2x.jpg" 2x type("image/jpg"));
   background-size: 100%;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: top;
 
   @media (width >= 768px) {
@@ -23,17 +24,19 @@
   @media (width >= 1440px) {
     width: 1220px;
     position: relative;
-    padding: 110px 80px 146px;
+    padding: 114px 80px 183px;
     background-color: transparent;
   }
 }
 
 .hero-wrapper {
-    padding: 0 20px;
 
   @media (width >= 768px) {
+    padding-left: 60px;
+  }
+
+  @media (width >= 1440px) {
     padding: 0;
-    padding-left: 90px;
   }
 }
 
@@ -45,10 +48,10 @@
   line-height: 36px;
   color: #ffffff;
   margin: 0 auto;
-  margin-top: 27px;
+  margin-top: 12px;
 
 
-  @media (width >=768px) {
+  @media (width >= 768px) {
     width: 416px;
     font-size: 60px;
     line-height: 60px;
@@ -58,8 +61,8 @@
   }
 
 
-  @media (width >=1440px) {
-    width: 414px;
+  @media (width >= 1440px) {
+    width: 420px;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
@@ -77,10 +80,10 @@
   text-transform: uppercase;
   color: #ffffff;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 26px;
 
 
-  @media (width >=768px) {
+  @media (width >= 768px) {
     width: 300px;
     font-size: 20px;
     line-height: 20px;
@@ -91,7 +94,7 @@
   }
 
 
-  @media (width >=1440px) {
+  @media (width >= 1440px) {
     width: 300px;
     font-size: 20px;
     line-height: 20px;
@@ -106,23 +109,24 @@
   display: block;
   width: 280px;
   margin: 0 auto;
-  margin-top: 29px;
+  margin-top: 30px;
+  object-fit: none;
 
 
-  @media (width >=768px) {
+  @media (width >= 768px) {
     width: 709px;
     position: absolute;
-    top: 266px;
-    left: 30px;
+    top: 267px;
+    left: 0;
     margin: 0;
     z-index: 1;
   }
 
 
-  @media (width >=1440px) {
+  @media (width >= 1440px) {
     width: 552px;
     position: absolute;
-    top: 29px;
+    top: 33px;
     left: 447px;
   }
 }
@@ -131,16 +135,18 @@
   margin-top: 3px;
 
 
-  @media (width >=768px) {
+  @media (width >= 768px) {
     position: relative;
     width: 244px;
-    margin-top: 50px;
-    padding: 17px 0;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 51px;
+    padding: 14px 0;
     z-index: 2;
   }
 
 
-  @media (width >=1440px) {
+  @media (width >= 1440px) {
     width: 244px;
     margin-top: 52px;
     padding: 14px 0;

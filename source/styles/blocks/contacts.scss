@@ -2,12 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 26px 0 21px;
+  padding: 0 0 21px;
   background-color: $secondary-color;
 
 
   @media (width >= 768px) {
-    padding: 0 0 20px;
+    padding: 94px 0 20px;
     justify-content: space-between;
   }
 
@@ -25,6 +25,7 @@
   flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;
+  padding: 26px 0;
   justify-content: space-between;
   background-color: $primary-color;
 
@@ -33,26 +34,26 @@
     width: 100%;
     padding: 61px 70px;
     margin: 0;
-    justify-content: space-between;
+    background-color: $primary-color;
   }
 
 
   @media (width >= 1440px) {
     z-index: 2;
-    background-color: #fff;
+    background-color: #ffffff;
     gap: 87px;
     width: 565px;
     height: 199px;
-    padding: 60px 78px 58px 79px;
+    padding: 60px 75px 60px 79px;
     position: absolute;
-    top: 96px;
+    top: 105px;
     right: 765px;
-}
+  }
 }
 
 .address__title {
   width: 160px;
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -63,7 +64,7 @@
   padding-left: 20px;
 
 
-  @media (width >=768px) {
+  @media (width >= 768px) {
     font-size: 20px;
     line-height: 26px;
     padding: 0;
@@ -77,35 +78,49 @@
   text-align: start;
   margin: 0;
   padding-right: 20px;
+  justify-content: space-evenly;
 
 
-  @media (width >=768px) {
+  @media (width >= 768px) {
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
     line-height: 20px;
     text-align: end;
     padding: 0;
   }
+
+  @media (width >= 1440px) {
+    text-align: start;
+  }
+}
+
+.address__info--street,
+.address__info--city {
+  width: fit-content;
+  padding: 0;
+  margin: 0;
 }
 
 .contacts__map {
   width: 100%;
-  margin-top: 26px;
+  margin: 0;
   position: relative;
 
 
-  @media (width >=768px) {
+  @media (width >= 768px) {
     width: 100%;
     margin: 0;
   }
 
 
   @media (width >= 1440px) {
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
   }
 }
 
 .contacts__links-wrapper {
-  @media (width >=1440px) {
+  @media (width >= 1440px) {
     width: 1220px;
     margin: 0 auto;
   }
@@ -117,23 +132,26 @@
 }
 
 .contacts__links {
+  display: block;
   width: 100%;
   list-style-type: none;
   padding: 0 20px;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 15px;
+  background-color: $secondary-color;
 
 
   @media (width >= 768px) {
     display: flex;
-    padding: 55px 30px;
+    padding: 50px 30px 55px;
     margin: 0;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (width >= 1440px) {
     display: flex;
-    padding: 55px 110px;
+    padding: 52px 110px 65px;
   }
 }
 
@@ -142,6 +160,7 @@
   margin: 20px auto;
   justify-content: space-around;
   border-bottom: 1px solid #d9d9d9;
+  position: relative;
 
 
   &:last-child {
@@ -150,8 +169,8 @@
   }
 
 
-  @media (width >=768px) {
-    width: 128px;
+  @media (width >= 768px) {
+    width: fit-content;
     padding: 0;
     margin: 0;
     justify-content: space-between;
@@ -164,10 +183,14 @@
   width: 128px;
   height: 24px;
   margin-bottom: 20px;
-  background-image: url(../../images/logo-text-mobile.svg);
+  background-image: url("../../images/mobile/logo-text-mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+
+  @media (width >= 768px) {
+    margin: 0;
+  }
 }
 
 .contacts-links__social {
@@ -176,45 +199,53 @@
   list-style-type: none;
   padding: 0;
   column-gap: 24px;
+  padding-bottom: 19px;
+
+  @media (width >= 768px) {
+    padding: 0;
+    margin-left: 41px;
+    column-gap: 27px;
+  }
 }
 
 .social__link {
   display: block;
   width: 28px;
-  height: 28px;
+  height: 22px;
+  margin: auto;
 
   &--vk {
-    background-image: url(../../icons/vkontakte.svg);
+    background-image: url("../../icons/vkontakte.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    width: 24px;
+    height: 22px;
   }
 
   &--youtube {
-    background-image: url(../../icons/youtube.svg);
+    background-image: url("../../icons/youtube.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    width: 24px;
+    height: 21px;
   }
 
 
   &--telegram {
-    background-image: url(../../icons/telegram.svg);
+    background-image: url("../../icons/telegram.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-  }
-
-
-  @media (width >=768px) {
-    width: 20px;
+    width: 24px;
+    height: 22px;
   }
 }
 
 .contacts-links__academy {
-  display: flex;
   width: 100%;
-  font-family: "Lato", sans-serif;
+  font-family: $primary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -222,22 +253,25 @@
   margin: 0;
   padding: 0;
   text-align: start;
-  justify-content: space-between;
+  padding: 7px 0;
+
+  @media (width >= 768px) {
+    width: 168px;
+    margin: 0;
+    padding: 7px 0 7px 6px;
+  }
 
   &::after {
     content: "";
     display: flex;
     width: 27px;
     height: 34px;
-    background-image: url(../../icons/html-academy.svg);
+    background-image: url("../../icons/html-academy.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-  }
-
-
-  @media (width >=768px) {
-    width: 128px;
-    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
