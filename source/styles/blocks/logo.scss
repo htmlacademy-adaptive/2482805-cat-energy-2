@@ -1,0 +1,60 @@
+.logo {
+  width: fit-content;
+  padding-left: 20px;
+  padding-bottom: 9px;
+
+  @media (width >= 768px) {
+    width: 174px;
+    padding: 0;
+  }
+}
+
+.header__logo {
+  position: relative;
+}
+
+.logo__link {
+  display: flex;
+  align-items: flex-end;
+
+  &--hover {
+    opacity: 0.8;
+  }
+
+  &--active {
+    opacity: 0.6;
+  }
+
+  &--disabled {
+    opacity: 0.3;
+  }
+}
+
+.logo__picture {
+  margin-top: 1px;
+
+  @media (width >= 768px) {
+    margin: 0;
+    position: absolute;
+    top: -89%;
+    left: 0;
+  }
+
+  @media (width >= 1440px) {
+    position: absolute;
+    left: 0;
+    top: -17px;
+  }
+}
+
+.logo__text {
+  margin-left: 73px;
+  margin-top: 0;
+
+  @media (width >= 1440px) {
+    width: 118px;
+    height: 25px;
+    margin: 0;
+    margin-left: 83px;
+  }
+}

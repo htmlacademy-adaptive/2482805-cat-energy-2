@@ -1,7 +1,8 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Юрий](https://up.htmlacademy.ru/adaptive-individual/2/user/2482805).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгения](https://htmlacademy.ru/profile/id2387199).
+* Сайт: [Личный проект «Кэт энерджи»](https://asdwzxcq.github.io/2482805-cat-energy-2/).
 
 ---
 

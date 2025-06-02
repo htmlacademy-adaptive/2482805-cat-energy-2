@@ -1,5 +1,88 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 13px 0 1px;
+  flex-grow: 1;
+  justify-content: space-between;
+
+  @media (width >= 768px) {
+    width: 100%;
+    padding: 40px 30px;
+    align-items: flex-end;
+  }
+
+  @media (width >= 1440px) {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+    padding: 72px 0 0;
+    align-items: flex-end;
+  }
+}
+
+.index-header {
+  @media (width >= 768px) {
+    padding: 40px 30px 0;
+  }
+
+  @media (width >= 1440px) {
+    width: 100%;
+    position: relative;
+    padding: 72px 110px 0;
+    align-items: flex-end;
+    background-image: linear-gradient(to right, $primary-color 50%, rgba(104, 183, 56, 0.85) 50% 100%);
+
+    &::before {
+      content: "";
+      background-image:
+        image-set(url("../../images/desktop/hero-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/desktop/hero-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/desktop/hero-background-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../images/desktop/hero-background-desktop@2x.jpg") type("image/jpg") 2x);
+      width: 50%;
+      height: 693px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      z-index: -1;
+      overflow: hidden;
+    }
+  }
+}
+
+.header__nav-toggle {
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 7px;
+  right: 4px;
+  margin-right: 17px;
+  padding: 10px;
+  border: none;
+  background-color: $primary-color;
+
+  &--nojs {
+    display: none;
+  }
+
+  &--open {
+    background-image: url("../../icons/stack.svg#list-open-button");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $primary-color;
+  }
+
+  &--close {
+    background-image: url("../../icons/stack.svg#list-close-button");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  @media (width >= 768px) {
+    display: none;
+  }
 }

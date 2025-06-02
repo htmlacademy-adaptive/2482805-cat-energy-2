@@ -1,0 +1,239 @@
+.programs-types {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 7px 20px 0;
+  margin: 0 auto;
+
+
+  @media (width >= 768px) {
+    width: 708px;
+    margin: 0 auto;
+    padding: 1px 0 10px;
+  }
+
+
+  @media (width >= 1440px) {
+    width: 1220px;
+    padding: 83px 0 0;
+    margin: 0 auto;
+  }
+}
+
+.programs-types__list {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+
+  @media (width >= 768px) {
+    padding: 0;
+  }
+
+
+  @media (width >= 1440px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+  }
+}
+
+.programs-types__list-item {
+  background-color: $secondary-color;
+  padding: 1px;
+  padding-bottom: 4px;
+  margin-bottom: 19px;
+
+
+  &--skinny {
+    background-image: url("../../icons/stack.svg#cat-skinny");
+    background-position: 22px 22px;
+    background-repeat: no-repeat;
+    background-size: 50px 53px;
+  }
+
+
+  &--muscle {
+    background-image: url("../../icons/stack.svg#cat-muscle");
+    background-position: 15px 25px;
+    background-repeat: no-repeat;
+    background-size: 67px 50px;
+  }
+
+
+  @media (width >= 768px) {
+    width: 100%;
+    padding: 77px 316px 57px 52px;
+    margin-bottom: 30px;
+
+
+    &--skinny {
+      background-image: url("../../icons/stack.svg#cat-skinny");
+      background-position: right 67px top 61px;
+      background-repeat: no-repeat;
+      background-size: 195px 245px;
+    }
+
+    &--muscle {
+      background-image: url("../../icons/stack.svg#cat-muscle");
+      background-position: right 27px top 91px;
+      background-repeat: no-repeat;
+      background-size: 268px 200px;
+    }
+  }
+
+
+  @media (width >= 1440px) {
+    width: 570px;
+    padding: 77px 61px 59px 52px;
+
+
+    &--skinny {
+      background-image: url("../../icons/stack.svg#cat-skinny");
+      background-position: 52px 39px;
+      background-repeat: no-repeat;
+      background-size: 100px 106px;
+    }
+
+    &--muscle {
+      background-image: url("../../icons/stack.svg#cat-muscle");
+      background-position: 36px 47px;
+      background-repeat: no-repeat;
+      background-size: 134px 100px;
+    }
+  }
+}
+
+.programs-types__title {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 88px;
+  text-align: start;
+
+
+  @media (width >= 768px) {
+    width: 100%;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  @media (width >= 1440px) {
+    width: 250px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+    margin-left: 161px;
+  }
+}
+
+.programs-types__description {
+  width: 100%;
+  text-align: start;
+  margin: 30 0 0;
+  padding: 0 20px 21px 19px;
+  border-bottom: 1px solid #d9d9d9;
+
+
+  @media (width >= 768px) {
+    width: 100%;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    margin-top: 23px;
+    border-bottom: none;
+  }
+
+
+  @media (width >= 1440px) {
+    width: 100%;
+    text-align: start;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    margin-top: 73px;
+    border-bottom: none;
+  }
+}
+
+.programs-types__link {
+  display: block;
+  position: relative;
+  width: 134px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 19px 0 18px;
+  text-align: start;
+  margin: 0 auto 0 20px;
+
+
+  &::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 16px;
+    left: 95px;
+    mask-image: url("../../icons/stack.svg#arrow-right");
+    mask-repeat: no-repeat;
+    mask-size: 24px 12px;
+    mask-position: center;
+    width: 32px;
+    height: 21px;
+    background-color: #000000;
+
+
+    @media (width >= 768px) {
+      top: 5px;
+      left: 127px;
+    }
+  }
+
+
+  @media (width >= 768px) {
+    width: 40%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+    margin-top: 52px;
+  }
+
+
+  @media (width >= 1440px) {
+    width: 168px;
+    margin-top: 27px;
+  }
+}
+
+.programs-types__link:hover:hover::after,
+.programs-types__link:hover:focus::after {
+  width: 45px;
+  mask-size: 45px 15px;
+}
+
+.programs-types__link:active {
+  opacity: 0.3;
+}
+
+.programs-types:disabled {
+  opacity: 0.1;
+}
