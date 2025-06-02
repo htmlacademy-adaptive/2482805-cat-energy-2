@@ -15,7 +15,7 @@
 
 .logo__link {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 
   &--hover {
     opacity: 0.8;
@@ -48,8 +48,12 @@
 }
 
 .logo__text {
-  margin-left: 73px;
+  margin-left: 55px;
   margin-top: 0;
+
+  @media (width >= 768px) {
+    margin-left: 73px;
+  }
 
   @media (width >= 1440px) {
     width: 118px;

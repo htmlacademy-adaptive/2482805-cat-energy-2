@@ -47,6 +47,7 @@
       top: 0;
       z-index: -1;
       overflow: hidden;
+      background-color: $special-color;
     }
   }
 }
@@ -62,6 +63,7 @@
   padding: 10px;
   border: none;
   background-color: $primary-color;
+  cursor: pointer;
 
   &--nojs {
     display: none;
@@ -85,4 +87,16 @@
   @media (width >= 768px) {
     display: none;
   }
+}
+
+.header__nav-toggle:hover {
+  opacity: 0.5;
+}
+
+.header__nav-toggle:active {
+  opacity: 0.3;
+}
+
+.header__nav-toggle:disabled {
+  opacity: 0.1;
 }
