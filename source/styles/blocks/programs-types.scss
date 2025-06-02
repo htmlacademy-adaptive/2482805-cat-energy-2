@@ -1,20 +1,22 @@
 .programs-types {
-  width: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 7px 18px 0;
+  padding: 7px 20px 0;
   margin: 0 auto;
 
 
   @media (width >= 768px) {
-    width: 100%;
-    padding: 1px 30px 10px;
+    width: 708px;
+    margin: 0 auto;
+    padding: 1px 0 10px;
   }
 
 
   @media (width >= 1440px) {
-    padding: 83px 110px 0;
-    margin: 0;
+    width: 1220px;
+    padding: 83px 0 0;
+    margin: 0 auto;
   }
 }
 
@@ -32,6 +34,7 @@
 
   @media (width >= 1440px) {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     justify-content: space-between;
   }
@@ -43,8 +46,9 @@
   padding-bottom: 4px;
   margin-bottom: 19px;
 
+
   &--skinny {
-    background-image: url("../../icons/cat-skinny.svg");
+    background-image: url("../../icons/stack.svg#cat-skinny");
     background-position: 22px 22px;
     background-repeat: no-repeat;
     background-size: 50px 53px;
@@ -52,7 +56,7 @@
 
 
   &--muscle {
-    background-image: url("../../icons/cat-muscle.svg");
+    background-image: url("../../icons/stack.svg#cat-muscle");
     background-position: 15px 25px;
     background-repeat: no-repeat;
     background-size: 67px 50px;
@@ -66,14 +70,14 @@
 
 
     &--skinny {
-      background-image: url("../../icons/cat-skinny.svg");
+      background-image: url("../../icons/stack.svg#cat-skinny");
       background-position: right 67px top 61px;
       background-repeat: no-repeat;
       background-size: 195px 245px;
     }
 
     &--muscle {
-      background-image: url("../../icons/cat-muscle.svg");
+      background-image: url("../../icons/stack.svg#cat-muscle");
       background-position: right 27px top 91px;
       background-repeat: no-repeat;
       background-size: 268px 200px;
@@ -87,14 +91,14 @@
 
 
     &--skinny {
-      background-image: url("../../icons/cat-skinny.svg");
+      background-image: url("../../icons/stack.svg#cat-skinny");
       background-position: 52px 39px;
       background-repeat: no-repeat;
       background-size: 100px 106px;
     }
 
     &--muscle {
-      background-image: url("../../icons/cat-muscle.svg");
+      background-image: url("../../icons/stack.svg#cat-muscle");
       background-position: 36px 47px;
       background-repeat: no-repeat;
       background-size: 134px 100px;
@@ -112,7 +116,7 @@
   color: #000000;
   margin: 0;
   margin-top: 30px;
-  margin-left: 90px;
+  margin-left: 88px;
   text-align: start;
 
 
@@ -138,10 +142,10 @@
 }
 
 .programs-types__description {
-  width: 240px;
+  width: 100%;
   text-align: start;
-  margin: 30px 21px 0;
-  padding-bottom: 21px;
+  margin: 30 0 0;
+  padding: 0 20px 21px 19px;
   border-bottom: 1px solid #d9d9d9;
 
 
@@ -178,7 +182,7 @@
   color: #000000;
   padding: 19px 0 18px;
   text-align: start;
-  margin: 0 auto 0 22px;
+  margin: 0 auto 0 20px;
 
 
   &::after {
@@ -187,12 +191,13 @@
     position: absolute;
     top: 16px;
     left: 95px;
-    background-image: url("../../icons/arrow-right.svg");
-    background-repeat: no-repeat;
-    background-size: 24px 12px;
-    background-position: center;
+    mask-image: url("../../icons/stack.svg#arrow-right");
+    mask-repeat: no-repeat;
+    mask-size: 24px 12px;
+    mask-position: center;
     width: 32px;
     height: 21px;
+    background-color: #000000;
 
 
     @media (width >= 768px) {
@@ -217,4 +222,18 @@
     width: 168px;
     margin-top: 27px;
   }
+}
+
+.programs-types__link:hover:hover::after,
+.programs-types__link:hover:focus::after {
+  width: 45px;
+  mask-size: 45px 15px;
+}
+
+.programs-types__link:active {
+  opacity: 0.3;
+}
+
+.programs-types:disabled {
+  opacity: 0.1;
 }

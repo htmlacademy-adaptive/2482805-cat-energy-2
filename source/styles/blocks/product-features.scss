@@ -1,20 +1,23 @@
 .product-features {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 100%;
   padding: 1px 20px 47px;
   margin: 0 auto;
 
 
   @media (width >= 768px) {
-    width: 100%;
-    padding: 7px 30px 47px;
+    width: 708px;
+    margin: 0 auto;
+    padding: 7px 0 47px;
+    overflow: hidden;
   }
 
 
   @media (width >= 1440px) {
-    padding: 42px 110px 0;
-    margin: 0;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 42px 0 0;
   }
 }
 
@@ -29,7 +32,7 @@
 
 
   @media (width >= 768px) {
-    width: 90%;
+    width: 60%;
     font-size: 60px;
     line-height: 60px;
   }
@@ -65,7 +68,6 @@
   margin-top: 20px;
   text-align: start;
   padding-left: 0;
-  justify-content: space-between;
 
   @media (width >= 768px) {
     width: 250px;
@@ -73,6 +75,7 @@
     padding: 151px 0 57px;
     background-color: transparent;
     counter-increment: product-features__item 1;
+    justify-content: space-between;
   }
 
 
@@ -86,7 +89,7 @@
     width: 60px;
     height: 60px;
     background-color: $special-color;
-    background-image: url("../../icons/leaf.svg");
+    background-image: url("../../icons/stack.svg#leaf");
     background-position: 50%;
     background-repeat: no-repeat;
 
@@ -101,21 +104,21 @@
 
   &--eat {
     &::before {
-      background-image: url("../../icons/leaf.svg");
+      background-image: url("../../icons/stack.svg#leaf");
       background-size: 30px 32px;
     }
   }
 
   &--fast {
     &::before {
-      background-image: url("../../icons/glass.svg");
+      background-image: url("../../icons/stack.svg#glass");
       background-size: 30px 32px;
     }
   }
 
   &--change {
     &::before {
-      background-image: url("../../icons/eat.svg");
+      background-image: url("../../icons/stack.svg#eat");
       background-size: 30px 32px;
     }
   }
@@ -123,7 +126,7 @@
 
   &--upgrade {
     &::before {
-      background-image: url("../../icons/clock.svg");
+      background-image: url("../../icons/stack.svg#clock");
       background-size: 30px 32px;
     }
   }
@@ -149,10 +152,12 @@
 .product-features__text {
   width: 200px;
   margin: 0;
+  margin-left: 20px;
 
 
   @media (width >= 768px) {
     width: 100%;
+    margin: 0;
   }
 
   .break {

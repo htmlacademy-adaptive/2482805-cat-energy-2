@@ -6,15 +6,17 @@
   background-color: $special-color;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85) 0% 61.5%, #ffffff 61.5% 100%),
-    image-set("../images/mobile/hero-background-mobile@1xjpg" 1x type("image/jpg"), "../images/mobile/hero-background-mobile@2x.jpg" 2x type("image/jpg"));
-  background-size: 100%;
+    image-set(url("../images/mobile/hero-background-mobile@1xwebp") ("image/webp") 1x type,
+    url("../images/mobile/hero-background-mobile@2x.webp") ("image/webp") 2x type,
+    url("../images/mobile/hero-background-mobile@1xjpg") ("image/jpg") 1x type,
+    url("../images/mobile/hero-background-mobile@2x.jpg") ("image/jpg") 2x type);
   background-repeat: no-repeat;
   background-position: top;
 
   @media (width >= 768px) {
     width: 768px;
     position: relative;
-    padding: 65px 30px 526px;
+    padding: 69px 30px 526px;
     background-color: $primary-color;
     background-image: none;
     margin: 0 auto;

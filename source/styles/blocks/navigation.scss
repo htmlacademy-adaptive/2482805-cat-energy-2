@@ -1,32 +1,67 @@
 .nav-wrapper {
   align-items: center;
+  position: relative;
+
+
+  @media (width >= 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 708px;
+    margin: 0 auto;
+    align-items: start;
+  }
 
   @media (width >= 1440px) {
+    display: flex;
+    width: 1220px;
     align-items: start;
+    flex-wrap: wrap;
   }
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+
+  @media (width >= 768px) {
+    width: 500px;
+    justify-content: flex-end;
+  }
+
+  @media (width >= 1440px) {
+    width: 578px;
+  }
 }
 
+
 .nav__list {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100vw;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  background-color: $primary-color;
 
+  &--nojs {
+    display: flex;
+  }
+
+  &--opened {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+  }
 
   @media (width >= 768px) {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     width: 100%;
     min-width: 436px;
-    justify-content: space-between;
-    margin-right: 5px;
+    justify-content: flex-end;
+    margin-right: 4px;
+    gap: 0 34px;
   }
 
   @media (width >= 1440px) {
@@ -41,6 +76,26 @@ nav {
 
   @media (width >= 768px) {
     border: none;
+
+    &--index {
+      border-bottom: 2px solid #68b738;
+    }
+
+    &--catalog {
+      border-bottom: 2px solid #68b738;
+    }
+  }
+
+  @media (width >= 1440px) {
+    width: fit-content;
+
+    &--index {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    &--catalog {
+      border-bottom: 2px solid #68b738;
+    }
   }
 }
 
@@ -58,14 +113,15 @@ nav {
   @media (width >= 768px) {
     font-size: 18px;
     line-height: 24px;
-    padding: 10px 0;
+    padding: 0 0 5px;
+    text-align: end;
   }
 
   @media (width >= 1440px) {
     font-size: 20px;
     line-height: 30px;
     padding: 0;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
 
     &--index {
       color: #ffffff;
