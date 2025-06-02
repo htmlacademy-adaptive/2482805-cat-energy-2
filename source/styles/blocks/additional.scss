@@ -226,10 +226,10 @@
   border-top: 1px solid #cdcdcd;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    image-set(url("../../images/mobile/gift-background-mobile@1x.webp") type(image/webp) 1x,
-    url("../../images/mobile/gift-background-mobile@2x.webp") type(image/webp) 2x,
-    url("../../images/mobile/gift-background-mobile@1x.jpg") type(image/jpeg) 1x,
-    url("../../images/mobile/gift-background-mobile@2x.jpg") type(image/jpeg) 2x);
+    image-set(url("../../images/mobile/gift-background-mobile@1x.webp") type("image/jwebp") 1x,
+    url("../../images/mobile/gift-background-mobile@1x.webp") type("image/jwebp") 2x,
+    url("../../images/mobile/gift-background-mobile@1x.jpg") type("image/jpeg") 1x,
+    url("../../images/mobile/gift-background-mobile@2x.jpg") type("image/jpeg") 2x);
 
   background-position: 50%;
   background-repeat: no-repeat;
@@ -242,10 +242,10 @@
     padding: 56px 0 62px;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      image-set(url("../../images/tablet/gift-background-tablet@1x.webp") type(image/webp) 1x,
-      url("../../images/tablet/gift-background-tablet@2x.webp") type(image/webp) 2x,
-      url("../../images/tablet/gift-background-tablet@1x.jpg") type(image/jpeg) 1x,
-      url("../../images/tablet/gift-background-tablet@2x.jpg") type(image/jpeg) 2x);
+      image-set(url("../../images/tablet/gift-background-tablet@1x.webp") type("image/webp") 1x,
+      url("../../images/tablet/gift-background-tablet@1x.webp") type("image/webp") 2x,
+      url("../../images/tablet/gift-background-tablet@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/tablet/gift-background-tablet@2x.jpg") type("image/jpeg"));
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -260,10 +260,10 @@
     margin-top: 0;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      image-set(url("../../images/desktop/gift-background-desktop@1x.webp") type(image/webp) 1x,
-      url("../../images/desktop/gift-background-desktop@2x.webp") type(image/webp) 2x,
-      url("../../images/desktop/gift-background-desktop@1x.jpg") type(image/jpeg) 1x,
-      url("../../images/desktop/gift-background-desktop@2x.jpg") type(image/jpeg) 2x);
+      image-set(url("../../images/desktop/gift-background-desktop@1x.webp") type("image/webp") 1x,
+      url("../../images/desktop/gift-background-desktop@1x.webp") type("image/webp") 2x,
+      url("../../images/desktop/gift-background-desktop@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/desktop/gift-background-desktop@2x.jpg") type("image/jpeg") 2x);
     justify-content: space-between;
   }
 
