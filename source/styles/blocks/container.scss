@@ -11,3 +11,13 @@
     width: 100%;
   }
 }
+
+
+.header-container {
+  width: 100%;
+
+  @media (width >= 1440px) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
