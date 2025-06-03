@@ -92,7 +92,7 @@
 .subscribe__email {
   display: flex;
   flex-direction: column;
-  padding-top: 23px;
+  padding-top: 24px;
 
   @media (width >= 768px) {
     flex-direction: row;
@@ -135,5 +135,22 @@
 
   &:disabled {
     border: 2px solid #ff8282;
+  }
+}
+
+.email__button {
+  width: 100%;
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 15px;
+  padding: 15px 0;
+
+
+  @media (width >= 768px) {
+    width: 256px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 0;
+    margin: 0;
   }
 }

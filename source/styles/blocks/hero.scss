@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   padding: 14px 20px 10px;
-  margin-top: 7px;
+  margin-top: 8px;
   background-color: $special-color;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85) 0% 61.5%, #ffffff 61.5% 100%),
@@ -130,5 +130,28 @@
     position: absolute;
     top: 33px;
     left: 447px;
+  }
+}
+
+
+.hero__button {
+  margin-top: 3px;
+
+
+  @media (width >= 768px) {
+    position: relative;
+    width: 244px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 51px;
+    padding: 14px 0;
+    z-index: 2;
+  }
+
+
+  @media (width >= 1440px) {
+    width: 244px;
+    margin-top: 52px;
+    padding: 14px 0;
   }
 }
