@@ -86,7 +86,7 @@
   &::before {
     content: "";
     display: flex;
-    width: 60px;
+    width: 80px;
     height: 60px;
     background-color: $special-color;
     background-image: url("../../icons/stack.svg#leaf");
@@ -151,19 +151,12 @@
 
 .product-features__text {
   width: 100%;
-  margin: 0;
-  margin-left: 20px;
-  padding-right: 2px;
+  margin: 0 0 0 23px;
+  padding-right: 0;
 
 
   @media (width >= 768px) {
     width: 100%;
     margin: 0;
-  }
-
-  .break {
-    @media (width < 768px) {
-      display: none;
-    }
   }
 }

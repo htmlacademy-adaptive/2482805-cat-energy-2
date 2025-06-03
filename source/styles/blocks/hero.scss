@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   padding: 14px 20px 10px;
+  margin-top: 7px;
   background-color: $special-color;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85) 0% 61.5%, #ffffff 61.5% 100%),
@@ -14,7 +15,7 @@
   background-position: top;
 
   @media (width >= 768px) {
-    width: 768px;
+    width: 708px;
     position: relative;
     padding: 69px 30px 526px;
     background-color: $primary-color;

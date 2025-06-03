@@ -197,6 +197,11 @@
   text-transform: uppercase;
   color: #000000;
   margin: 34px 0 0 47px;
+  column-gap: 5px;
+
+  @media (width > 320px) {
+    margin: 34px auto 0;
+  }
 
 
   @media (width >= 768px) {
@@ -281,18 +286,13 @@
 }
 
 .proof__slider {
-  width: 40px;
-  height: 40px;
+  width: 39px;
+  height: 39px;
   border-radius: 50%;
   border: 2px solid #666666;
   position: absolute;
   top: 108px;
   left: 120px;
-  background-image: url("../../icons/stack.svg#slider-triangle"), linear-gradient($primary-color 0% 50%, $primary-color 50% 100%);
-  background-size: 90%;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 10;
 
   @media (width >= 768px) {
     width: 40px;
@@ -300,33 +300,48 @@
     border-radius: 50%;
     border: 2px solid #666666;
     position: absolute;
-    top: 237px;
+    top: 236px;
     left: 260px;
-    background-image: url("../../icons/slider-triangle.svg");
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   &::before {
     content: "";
     display: block;
-    width: 4px;
-    height: 256px;
+    width: 3px;
+    height: 110px;
     position: absolute;
     background-color: #666666;
-    top: -108px;
+    top: -110px;
     right: 16px;
     z-index: 0;
+    box-shadow: 0 147px #666666;
 
     @media (width >= 768px) {
       display: block;
       width: 4px;
-      height: 512px;
+      height: 237px;
       position: absolute;
       background-color: #666666;
       top: -238px;
       right: 16px;
+      box-shadow: 0 274px #666666;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: flex;
+    width: 30px;
+    height: 30px;
+    mask-image: url("../../icons/stack.svg#slider-triangle");
+    mask-size: 80%;
+    mask-repeat: no-repeat;
+    mask-position: 0 0;
+    background-color: #666666;
+
+    @media (width >= 768px) {
+      width: 30px;
+      height: 30px;
     }
   }
 }
@@ -336,14 +351,32 @@
 
   &::before {
     background-color: #68b738;
+    box-shadow: 0 147px #68b738;
+
+    @media (width >= 768px) {
+      box-shadow: 0 274px #68b738;
+    }
+  }
+
+  &::after {
+    background-color: #68b738;
   }
 }
 
 .proof__slider:active {
-  border: 2px solid #5eaa2f;
   opacity: 0.6;
+  border: 2px solid #5eaa2f;
 
   &::before {
+    background-color: #5eaa2f;
+    box-shadow: 0 147px #5eaa2f;
+
+    @media (width >= 768px) {
+      box-shadow: 0 274px #68b738;
+    }
+  }
+
+  &::after {
     background-color: #5eaa2f;
   }
 }
