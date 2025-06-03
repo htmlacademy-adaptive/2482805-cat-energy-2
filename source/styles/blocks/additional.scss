@@ -67,20 +67,6 @@
   }
 }
 
-.additional-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding-top: 0;
-
-  @media (width >= 1440px) {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    border: none;
-    padding-top: 80px;
-  }
-}
-
 .additional__list {
   display: flex;
   flex-direction: column;
@@ -206,22 +192,6 @@
       width: 100px;
       margin-left: auto;
     }
-  }
-}
-
-.additional__button {
-  width: 100%;
-  margin-top: 15px;
-
-
-  @media (width >= 768px) {
-    margin-top: 25px;
-  }
-
-
-  @media (width >= 1440px) {
-    width: 244px;
-    margin: 0;
   }
 }
 
