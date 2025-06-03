@@ -132,25 +132,3 @@
     left: 447px;
   }
 }
-
-.hero__button {
-  margin-top: 3px;
-
-
-  @media (width >= 768px) {
-    position: relative;
-    width: 244px;
-    font-size: 20px;
-    line-height: 26px;
-    margin-top: 51px;
-    padding: 14px 0;
-    z-index: 2;
-  }
-
-
-  @media (width >= 1440px) {
-    width: 244px;
-    margin-top: 52px;
-    padding: 14px 0;
-  }
-}
