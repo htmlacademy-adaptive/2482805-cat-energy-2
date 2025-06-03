@@ -35,9 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const screenWidth = window.innerWidth;
 
     let iconSize;
+    let IconOffset = [-26, 60];
 
-    if (screenWidth >= 768) {
+    if (screenWidth >= 768 && screenWidth < 1440) {
       iconSize = [113, 106];
+      IconOffset = [-50, -57];
+    } else if (screenWidth >= 1440) {
+      iconSize = [113, 106];
+      IconOffset = [190, -68];
     } else {
       iconSize = [57, 53];
     }
@@ -46,9 +51,17 @@ document.addEventListener('DOMContentLoaded', () => {
       iconLayout: 'default#image',
       iconImageHref: 'images/map-pin.png',
       iconImageSize: iconSize,
-      iconImageOffset: [-26, -60]
+      iconImageOffset: IconOffset
     });
 
     myMap.geoObjects.add(myPlacemark);
+
+    const addressMap = document.querySelector('.contacts__map-nojs');
+
+    if (addressMap.classList.contains('contacts__map-nojs--on')) {
+      addressMap.classList.remove('contacts__map-nojs--on');
+      addressMap.classList.add('contacts__map-nojs--off');
+    }
+
   });
 });

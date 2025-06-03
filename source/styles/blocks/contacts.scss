@@ -117,12 +117,10 @@
 }
 
 .contacts__map-nojs {
-  display: none;
   width: 100%;
   margin: 0;
   position: relative;
   background-color: $secondary-color;
-
 
   @media (width >= 768px) {
     width: 100%;
@@ -133,7 +131,12 @@
   @media (width >= 1440px) {
     padding: 0;
   }
+
+  &--off {
+    display: none;
+  }
 }
+
 
 .contacts-links-wrapper {
   width: 100%;
@@ -159,7 +162,7 @@
     width: 706;
     display: flex;
     flex-wrap: wrap;
-    padding: 47px 0 55px 2px;
+    padding: 52px 0 55px 2px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: start;
@@ -168,7 +171,7 @@
 
   @media (width >= 1440px) {
     width: 1440px;
-    padding: 57px 110px 65px;
+    padding: 65px 110px;
     display: flex;
     align-items: center;
   }
