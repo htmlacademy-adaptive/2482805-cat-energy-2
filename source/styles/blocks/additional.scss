@@ -161,7 +161,7 @@
 
 
   @media (width >= 768px) {
-    width: fit-content;
+    width: 200px;
     font-size: 20px;
     line-height: 20px;
     margin: 0;
@@ -183,23 +183,28 @@
 
 
   @media (width >= 768px) {
-    width: fit-content;
+    width: 200px;
     font-size: 16px;
     line-height: 20px;
-    text-align: start;
+    text-align: end;
     margin-top: 0;
 
     &--price {
-      margin-left: 8%;
+      width: 90px;
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 0;
+      padding-left: 10px;
     }
   }
 
   @media (width >= 1440px) {
+    text-align: start;
     width: 150px;
 
     &--price {
-      width: fit-content;
-      margin-left: 91px;
+      width: 100px;
+      margin-left: auto;
     }
   }
 }
