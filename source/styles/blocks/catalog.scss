@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 14px 0;
+  padding: 15px 0;
   margin: 0 auto;
   border-top: 1px solid #e6e6e6;
 
@@ -16,12 +16,12 @@
 
   @media (width >= 1440px) {
     width: 1220px;
-    padding: 78px 0 0;
+    padding: 74px 0 0;
   }
 }
 
 .catalog__title {
-  width: 100%;
+  width: 320px;
   display: block;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -29,11 +29,19 @@
   line-height: 36px;
   color: #000000;
   text-align: start;
-  margin: 0;
+  margin: 0 auto;
   padding: 12px 20px 40px;
 
 
   @media (width >= 768px) {
+    width: 80%;
+    padding: 0 0 40px;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+  }
+
+  @media (width >= 1440px) {
     width: 80%;
     padding: 0 0 40px;
     font-size: 60px;
@@ -43,13 +51,14 @@
 
 .catalog__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   list-style-type: none;
   padding: 0;
   margin: 0;
 
 
   @media (width >= 768px) {
+    flex-direction: row;
     margin-top: 55px;
     gap: 60px;
     row-gap: 70px;
@@ -59,337 +68,5 @@
   @media (width >= 1440px) {
     margin-top: 59px;
     gap: 77px 80px;
-  }
-}
-
-.catalog__item {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px 20px 24px;
-  border-top: 1px solid #ebebeb;
-  justify-content: space-between;
-
-  @media (width >= 768px) {
-    width: 324px;
-    flex-direction: column;
-    padding: 0 37px 40px;
-    background-image: linear-gradient(to bottom, $primary-color 0% 14%, $secondary-color 14% 90%);
-    border-top: none;
-  }
-
-
-  @media (width >= 1440px) {
-    width: 245px;
-    flex-direction: column;
-    padding: 0 37px 40px;
-    background-image: linear-gradient(to bottom, $primary-color 0% 13.4%, $secondary-color 13.4% 90%);
-    border-top: none;
-  }
-
-
-  &--more {
-    display: flex;
-    flex-direction: column;
-
-    @media (width >= 768px) {
-      background-image: none;
-      justify-content: flex-start;
-      outline: 2px solid $secondary-color;
-      margin-top: 73px;
-    }
-
-    @media (width >= 1440px) {
-      margin-top: 68px;
-      padding-bottom: 28px;
-    }
-  }
-}
-
-.card__link {
-  display: block;
-
-
-  @media (width >= 768px) {
-    width: 100%;
-  }
-
-  &--more {
-    position: relative;
-
-    @media (width >= 768px) {
-      display: block;
-      width: 170px;
-      margin: 48px auto 0;
-      padding-top: 110px;
-    }
-
-    @media (width >= 1440px) {
-      padding-top: 100px;
-    }
-  }
-}
-
-.card__link--more::before {
-  content: "";
-  mask-image: url("../../icons/stack.svg#view-more-icon");
-  mask-size: 100%;
-  mask-position: center;
-  mask-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 4px;
-  left: 45%;
-  background-color: #d3d3d3;
-
-  @media (width >= 768px) {
-    width: 60px;
-    height: 60px;
-    top: 0;
-    left: 55px;
-  }
-}
-
-.card__link--more:hover::before {
-  opacity: 0.5;
-}
-
-.card__link--more:active::before {
-  opacity: 0.3;
-}
-
-.card__link--more:disabled::before {
-  opacity: 0.1;
-}
-
-.card__image {
-  display: block;
-  margin: 2px 0 0 28px;
-
-  &--small {
-    margin: 10px 0 0 36px;
-  }
-
-  @media (width >= 768px) {
-    width: 170px;
-    margin: 1px 0 0 40px;
-
-    &--small {
-      width: 169px;
-      margin: 18px 0 14px 40px;
-    }
-  }
-
-  @media (width >= 1440px) {
-    width: 169px;
-    margin: 2px 0 5px;
-
-    &--small {
-      width: 169px;
-      margin: 14px 0 18px;
-    }
-  }
-
-  &:hover {
-    opacity: 0.5;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:disabled {
-    opacity: 0.1;
-  }
-}
-
-.card__info {
-  width: 140px;
-  display: flex;
-  flex-direction: column;
-
-
-  @media (width >= 768px) {
-    width: 250px;
-    margin: 0 auto;
-  }
-
-
-  @media (width >= 1440px) {
-    width: 170px;
-  }
-}
-
-.card__title {
-  width: 70%;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #222222;
-  text-align: start;
-  margin: 2px 0 14px 1px;
-
-
-  @media (width >= 768px) {
-    width: 60%;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    margin: 24px auto 20px;
-    padding-right: 1px;
-  }
-
-  @media (width >= 1440px) {
-    width: 90%;
-    margin: 14px auto 25px;
-  }
-
-  &:hover {
-    opacity: 0.5;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:disabled {
-    opacity: 0.1;
-  }
-}
-
-
-.card__title--more {
-  display: block;
-  width: 210px;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #000000;
-  margin: 59px auto 0;
-
-
-  @media (width >= 768px) {
-    width: 136px;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 0 auto;
-  }
-}
-
-.card__list {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 12px;
-  line-height: 16px;
-  list-style-type: none;
-  justify-content: space-between;
-  margin: 0;
-
-
-  @media (width >= 768px) {
-    font-size: 16px;
-    line-height: 20px;
-    border-bottom: 1px solid #cdcdcd;
-    padding-bottom: 4px;
-    margin-bottom: 7px;
-  }
-}
-
-.card__termin {
-  width: 50px;
-  text-align: start;
-
-  @media (width >= 768px) {
-    width: 100px;
-  }
-}
-
-.card__description {
-  width: 50px;
-  text-align: end;
-  margin: 0;
-
-  @media (width >= 768px) {
-    width: 70px;
-  }
-
-  &--more {
-    width: 250px;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-    margin: 8px auto 0;
-
-
-    @media (width >= 768px) {
-      width: 170px;
-      font-size: 16px;
-      line-height: 18px;
-      margin: 0 auto;
-      margin-top: 23px;
-    }
-
-    @media (width >= 1440px) {
-      width: 170px;
-      font-size: 16px;
-      line-height: 18px;
-      margin: 0 auto;
-      margin-top: 25px;
-    }
-  }
-}
-
-.card__button {
-  margin-top: 20px;
-
-
-  @media (width >= 768px) {
-    width: 250px;
-    margin: 0 auto;
-    margin-top: 26px;
-  }
-
-  @media (width >= 1440px) {
-    margin-top: 30px;
-    width: 169px;
-  }
-
-  &--more {
-    margin-top: 21px;
-    color: #444444;
-    background-color: $secondary-color;
-
-    @media (width >= 768px) {
-      margin-top: 82px;
-    }
-
-    @media (width >= 1440px) {
-      margin-top: 92px;
-    }
-
-
-    &:hover {
-      background-color: #ebebeb;
-    }
-
-    &:focus {
-      background-color: #ebebeb;
-      outline: none;
-    }
-
-    &:active {
-      color: #444444;
-    }
-
-    &:disabled {
-      background-color: rgba(0, 0, 0, 1);
-      color: rgba(68, 68, 68, 0.1);
-    }
   }
 }

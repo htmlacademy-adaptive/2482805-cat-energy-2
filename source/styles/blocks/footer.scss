@@ -1,4 +1,4 @@
-.container {
+.footer {
   width: 100%;
   margin: 0 auto;
 
@@ -9,15 +9,5 @@
 
   @media (width >= 1440px) {
     width: 100%;
-  }
-}
-
-
-.header-container {
-  width: 100%;
-
-  @media (width >= 1440px) {
-    width: 1220px;
-    margin: 0 auto;
   }
 }

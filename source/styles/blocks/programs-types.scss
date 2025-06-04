@@ -1,8 +1,8 @@
 .programs-types {
-  width: 100%;
+  width: 320px;
   display: flex;
   flex-direction: column;
-  padding: 4px 20px 0;
+  padding: 7px 20px 0;
   margin: 0 auto;
 
 
@@ -44,12 +44,12 @@
   background-color: $secondary-color;
   padding: 1px;
   padding-bottom: 4px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 
 
   &--skinny {
     background-image: url("../../icons/stack.svg#cat-skinny");
-    background-position: 22px 22px;
+    background-position: 20px 20px;
     background-repeat: no-repeat;
     background-size: 50px 53px;
   }
@@ -72,14 +72,12 @@
     &--skinny {
       background-image: url("../../icons/stack.svg#cat-skinny");
       background-position: right 67px top 61px;
-      background-repeat: no-repeat;
       background-size: 195px 245px;
     }
 
     &--muscle {
       background-image: url("../../icons/stack.svg#cat-muscle");
-      background-position: right 27px top 91px;
-      background-repeat: no-repeat;
+      background-position: right 27px top 90px;
       background-size: 268px 200px;
     }
   }
@@ -93,14 +91,12 @@
     &--skinny {
       background-image: url("../../icons/stack.svg#cat-skinny");
       background-position: 52px 39px;
-      background-repeat: no-repeat;
       background-size: 100px 106px;
     }
 
     &--muscle {
       background-image: url("../../icons/stack.svg#cat-muscle");
-      background-position: 36px 47px;
-      background-repeat: no-repeat;
+      background-position: 36px 45px;
       background-size: 134px 100px;
     }
   }
@@ -115,7 +111,7 @@
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 28px;
   margin-left: 88px;
   text-align: start;
 
