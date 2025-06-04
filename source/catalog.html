@@ -20,7 +20,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header header-catalog">
+  <header class="header header--catalog">
     <div class="header__wrapper">
       <div class="header__logo logo">
         <a class="logo__link" href="index.html">
@@ -53,7 +53,7 @@
       </nav>
     </div>
   </header>
-  <main class="main-container container">
+  <main class="main-container">
     <section class="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <h2 class="visually-hidden">Корма для котов</h2>
@@ -382,7 +382,7 @@
   <footer class="footer container">
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="contacts__address address contacts__address--catalog">
+      <div class="contacts__address address address--catalog">
         <h3 class="address__title">Приглашаем<br>к сотрудничеству дилеров!</h3>
         <p class="address__info">
           <span class="address__info address__info--street">ул. Большая
@@ -390,26 +390,8 @@
           <span class="address__info address__info--city">Санкт-Петербург</span>
         </p>
       </div>
-      <div class="contacts__map-nojs contacts__map-nojs--on map">
-        <picture>
-          <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp"
-            srcset="images/desktop/map/map-desktop@1x.webp 1x, images/desktop/map/map-desktop@2x.webp 2x">
-          <source media="(min-width: 768px)" width="768" height="400" type="image/webp"
-            srcset="images/tablet/map/map-tablet@1x.webp 1x, images/tablet/map/map-tablet@2x.webp 2x">
-          <source width="320" height="362" type="image/webp"
-            srcset="images/mobile/map/map-mobile@1x.webp 1x, images/mobile/map/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" width="1440" height="400" type="image/png"
-            srcset="images/desktop/map/map-desktop@1x.png 1x, images/desktop/map/map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" width="768" height="400" type="image/png"
-            srcset="images/tablet/map/map-tablet@1x.png 1x, images/tablet/map/map-tablet@2x.png 2x">
-          <img class="map__image" width="320" height="362" src="images/mobile/map/map-mobile@1x.png"
-            srcset="images/mobile/map/map-mobile@2x.png 2x" alt="Карта города с отметкой магазина.">
-        </picture>
-      </div>
-      <div class="contacts__map-nojs">
-        <div class="contacts__map-js contacts__map-js--index" id="map" style="width:100%; height:400px"></div>
-        </div>
-        <div class="contacts-links-wrapper">
+      <div class="contacts__map contacts__map--js" id="map" style="width:100%; height:400px"></div>
+        <div class="contacts__links-wrapper">
       <ul class="contacts__links contacts-links">
         <li class="contacts-links__item">
           <h2 class="visually-hidden">Наши ссылки</h2>

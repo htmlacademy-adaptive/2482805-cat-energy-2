@@ -55,13 +55,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     myMap.geoObjects.add(myPlacemark);
-
-    const addressMap = document.querySelector('.contacts__map-nojs');
-
-    if (addressMap.classList.contains('contacts__map-nojs--on')) {
-      addressMap.classList.remove('contacts__map-nojs--on');
-      addressMap.classList.add('contacts__map-nojs--off');
-    }
-
   });
 });

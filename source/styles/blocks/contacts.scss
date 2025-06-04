@@ -7,7 +7,7 @@
   background-color: $secondary-color;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     padding: 0;
     justify-content: space-between;
 
@@ -16,19 +16,19 @@
     }
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     background-color: $secondary-color;
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     position: relative;
     padding: 0;
     justify-content: space-between;
   }
 }
 
-.contacts__map-nojs {
+.contacts__map {
   width: 100%;
   height: 400px;
   background-color: $secondary-color;
@@ -38,7 +38,7 @@
     url("../../images/mobile/map/map-mobile@1x.jpg") type("image/jpg") 1x,
     url("../../images/mobile/map/map-mobile@2x.jpg") type("image/jpg") 2x);
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 100%;
     margin: 0;
     background-image:
@@ -49,7 +49,7 @@
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     padding: 0;
     background-image:
       image-set(url("../../images/desktop/map/map-desktop@1x.webp") type("image/webp") 1x,
@@ -63,10 +63,10 @@
   }
 }
 
-.contacts-links-wrapper {
+.contacts__links-wrapper {
   width: 100%;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 100%;
     margin: 0;
     background-color: $secondary-color;
@@ -82,7 +82,7 @@
   background-color: $secondary-color;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 706;
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +93,7 @@
     gap: 0 20px;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 1440px;
     padding: 65px 110px;
     display: flex;
@@ -114,20 +114,20 @@
     justify-content: space-between;
     border-bottom: none;
 
-    @media (width >= 1440px) {
+    @media (min-width: 1440px) {
       justify-content: flex-end;
     }
   }
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     padding: 0;
     margin: 0;
     justify-content: space-between;
     border-bottom: none;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 300px;
   }
 }
@@ -142,7 +142,7 @@
   background-position: center;
   background-size: 100%;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     margin: 0;
     padding: 20px;
   }
@@ -175,7 +175,7 @@
   text-align: start;
   padding: 7px 35px 7px 0;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     display: flex;
     width: 200px;
     margin: 0;
@@ -185,7 +185,7 @@
     column-gap: 24px;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     text-align: end;
   }
 
@@ -203,7 +203,7 @@
     right: 0;
     top: 0;
 
-    @media (width >= 768px) {
+    @media (min-width: 768px) {
       position: relative;
     }
   }

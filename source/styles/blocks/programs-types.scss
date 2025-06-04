@@ -6,16 +6,16 @@
   margin: 0 auto;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 708px;
     margin: 0 auto;
     padding: 1px 0 10px;
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 1220px;
-    padding: 83px 0 0;
+    padding: 81px 0 0;
     margin: 0 auto;
   }
 }
@@ -27,12 +27,12 @@
   margin: 0;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     padding: 0;
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
@@ -59,11 +59,11 @@
     background-image: url("../../icons/stack.svg#cat-muscle");
     background-position: 15px 25px;
     background-repeat: no-repeat;
-    background-size: 67px 50px;
+    background-size: 64px 50px;
   }
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 100%;
     padding: 77px 316px 57px 52px;
     margin-bottom: 30px;
@@ -77,13 +77,13 @@
 
     &--muscle {
       background-image: url("../../icons/stack.svg#cat-muscle");
-      background-position: right 27px top 90px;
+      background-position: right 33px top 90px;
       background-size: 268px 200px;
     }
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 570px;
     padding: 77px 61px 59px 52px;
 
@@ -96,7 +96,7 @@
 
     &--muscle {
       background-image: url("../../icons/stack.svg#cat-muscle");
-      background-position: 36px 45px;
+      background-position: 33px 47px;
       background-size: 134px 100px;
     }
   }
@@ -116,7 +116,7 @@
   text-align: start;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 100%;
     font-size: 36px;
     line-height: 36px;
@@ -126,7 +126,7 @@
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 250px;
     font-size: 36px;
     line-height: 36px;
@@ -138,14 +138,14 @@
 }
 
 .programs-types__description {
-  width: 100%;
+  width: 239px;
   text-align: start;
-  margin: 30 0 0;
-  padding: 0 20px 21px 19px;
+  margin: 30 20px 0 19px;
+  padding: 0 0 21px;
   border-bottom: 1px solid #d9d9d9;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 100%;
     color: #000000;
     padding: 0;
@@ -155,7 +155,7 @@
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 100%;
     text-align: start;
     color: #000000;
@@ -196,14 +196,14 @@
     background-color: #000000;
 
 
-    @media (width >= 768px) {
+    @media (min-width: 768px) {
       top: 5px;
       left: 127px;
     }
   }
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 40%;
     font-size: 20px;
     line-height: 30px;
@@ -214,7 +214,7 @@
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 168px;
     margin-top: 27px;
   }

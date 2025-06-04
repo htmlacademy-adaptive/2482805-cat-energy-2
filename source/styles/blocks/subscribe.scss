@@ -6,13 +6,13 @@
   margin: 0 auto;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 708px;
     margin: 0 auto;
-    padding: 80px 0 79px;
+    padding: 77px 0 79px;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 1220px;
     margin: 0 auto;
     padding: 96px 0 104px;
@@ -33,13 +33,13 @@
   box-shadow: 40px 0 #ffffff, -40px 0 #ffffff;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     font-size: 32px;
     line-height: 32px;
     margin-left: 40px;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     font-size: 40px;
     line-height: 40px;
     margin: 0;
@@ -57,11 +57,11 @@
     z-index: -1;
     box-shadow: 100vw 0 $special-color;
 
-    @media (width >= 768px) {
+    @media (min-width: 768px) {
       top: 14px;
     }
 
-    @media (width >= 1440px) {
+    @media (min-width: 1440px) {
       top: 18px;
     }
   }
@@ -76,7 +76,7 @@
   margin: 32px 0 0;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 100%;
     font-size: 24px;
     line-height: 32px;
@@ -85,7 +85,7 @@
     margin: 0;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     padding-top: 72px;
   }
 }

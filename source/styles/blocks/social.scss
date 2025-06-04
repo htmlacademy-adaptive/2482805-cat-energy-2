@@ -7,7 +7,7 @@
   padding-bottom: 19px;
   justify-content: center;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     display: flex;
     width: 200px;
     padding: 0;
@@ -15,7 +15,7 @@
     column-gap: 18px;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     margin-left: 50px;
     column-gap: 18px;
   }
@@ -29,7 +29,7 @@
   background-color: #666666;
   padding: 0 20px;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     padding: 20px;
   }
 

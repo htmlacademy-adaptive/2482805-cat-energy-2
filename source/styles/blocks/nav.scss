@@ -3,12 +3,12 @@
   flex-wrap: wrap;
   width: 280px;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 500px;
     justify-content: flex-end;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 578px;
   }
 }
@@ -21,7 +21,7 @@
   padding: 0;
   margin: 0;
   background-color: $primary-color;
-  box-shadow: 35vw 0 $primary-color, -35vw 0 $primary-color;
+  box-shadow: 35vw 0 $primary-color, -35vw 0 $primary-color, 0 -10px $primary-color;
 
   &--nojs {
     display: flex;
@@ -30,10 +30,11 @@
   &--opened {
     display: flex;
     position: absolute;
+    top: 57px;
     z-index: 2;
   }
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-flow: row wrap;
     position: static;
@@ -45,7 +46,7 @@
     box-shadow: 0 0;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     background-color: transparent;
     min-width: 478px;
     margin: 0;
@@ -65,12 +66,12 @@
     background-color: #ebebeb;
     box-shadow: 30vw 0 #ebebeb, -30vw 0 #ebebeb;
 
-    @media (width > 767px) {
+    @media (min-width: 768px) {
       display: none;
     }
   }
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     border: none;
 
     &--index {
@@ -82,7 +83,7 @@
     }
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: fit-content;
 
     &--index {
@@ -106,33 +107,38 @@
   color: #000000;
   padding: 22px 0 23px;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     font-size: 18px;
     line-height: 24px;
     padding: 0 0 5px;
     text-align: end;
+
+    &::before {
+      display: none;
+    }
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     font-size: 20px;
     line-height: 30px;
     padding: 0;
     padding-bottom: 6px;
 
+
     &--index {
       color: #ffffff;
     }
+  }
 
-    &:hover {
-      opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
+  }
 
-    &:disabled {
-      opacity: 0.1;
-    }
+  &:disabled {
+    opacity: 0.1;
   }
 }
