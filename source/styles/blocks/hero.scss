@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 14px 20px 10px;
+  padding: 15px 20px 10px;
   margin-top: 8px;
-  background-color: $special-color;
+  background-color: #4f4f54;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85) 0% 61.5%, #ffffff 61.5% 100%),
     image-set(url("../../images/mobile/hero-background-mobile@1x.webp") type("image/webp") 1x,
@@ -27,7 +27,7 @@
   @media (width >= 1440px) {
     width: 1220px;
     position: relative;
-    padding: 114px 80px 183px;
+    padding: 116px 80px 183px;
     background-color: transparent;
   }
 }
@@ -82,7 +82,7 @@
   text-transform: uppercase;
   color: #ffffff;
   margin: 0 auto;
-  margin-top: 26px;
+  margin-top: 25px;
 
 
   @media (width >= 768px) {
@@ -111,7 +111,7 @@
   display: block;
   width: 280px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 29px;
   object-fit: none;
 
 
@@ -135,7 +135,8 @@
 
 
 .hero__button {
-  margin-top: 3px;
+  width: 280px;
+  margin: 3px auto 0;
 
 
   @media (width >= 768px) {
@@ -143,7 +144,7 @@
     width: 244px;
     font-size: 20px;
     line-height: 26px;
-    margin-top: 51px;
+    margin: 51px 0 0;
     padding: 14px 0;
     z-index: 2;
   }

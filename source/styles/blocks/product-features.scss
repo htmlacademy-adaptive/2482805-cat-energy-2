@@ -1,7 +1,7 @@
 .product-features {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 320px;
   padding: 1px 20px 47px;
   margin: 0 auto;
 
@@ -86,7 +86,7 @@
   &::before {
     content: "";
     display: flex;
-    width: 80px;
+    width: 60px;
     height: 60px;
     background-color: $special-color;
     background-image: url("../../icons/stack.svg#leaf");
@@ -150,8 +150,8 @@
 
 
 .product-features__text {
-  width: 100%;
-  margin: 0 0 0 23px;
+  width: 200px;
+  margin: 0 0 0 21px;
   padding-right: 0;
 
 

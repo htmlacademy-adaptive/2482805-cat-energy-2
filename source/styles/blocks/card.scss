@@ -1,9 +1,10 @@
-.catalog__item {
-  width: 100%;
+.card {
+  width: 320px;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 20px 24px;
-  border-top: 1px solid #ebebeb;
+  position: relative;
+  padding: 21px 20px 24px;
+  margin: 0 auto;
   justify-content: space-between;
 
   @media (width >= 768px) {
@@ -27,6 +28,7 @@
   &--more {
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid $secondary-color;
 
     @media (width >= 768px) {
       background-image: none;
@@ -42,12 +44,28 @@
   }
 }
 
+.card::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ebebeb;
+  box-shadow: 30vw 0 #ebebeb, -30vw 0 #ebebeb;
+
+  @media (width > 767px) {
+    display: none;
+  }
+}
+
 .card__link {
   display: block;
 
 
   @media (width >= 768px) {
     width: 100%;
+    box-shadow: 0 0;
   }
 
   &--more {
@@ -62,6 +80,7 @@
 
     @media (width >= 1440px) {
       padding-top: 100px;
+      margin-top: 48px;
     }
   }
 }
@@ -180,7 +199,7 @@
 
   @media (width >= 1440px) {
     width: 90%;
-    margin: 14px auto 25px;
+    margin: 14px auto 24px;
   }
 
   &:hover {
@@ -234,6 +253,12 @@
     border-bottom: 1px solid #cdcdcd;
     padding-bottom: 4px;
     margin-bottom: 7px;
+  }
+
+  @media (width >= 1440px) {
+    &:last-child {
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -292,7 +317,7 @@
   }
 
   @media (width >= 1440px) {
-    margin-top: 30px;
+    margin-top: 25px;
     width: 169px;
   }
 

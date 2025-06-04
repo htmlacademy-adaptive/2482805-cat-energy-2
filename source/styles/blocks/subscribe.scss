@@ -1,8 +1,9 @@
 .subscribe {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 320px;
   padding: 40px 20px;
+  margin: 0 auto;
 
 
   @media (width >= 768px) {
@@ -26,7 +27,7 @@
   line-height: 24px;
   color: #000000;
   text-align: start;
-  margin: 0;
+  margin: 1px 0 0;
   position: relative;
   background-color: $primary-color;
   box-shadow: 40px 0 #ffffff, -40px 0 #ffffff;

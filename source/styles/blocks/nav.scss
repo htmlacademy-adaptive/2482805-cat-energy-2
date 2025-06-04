@@ -1,7 +1,7 @@
 .nav {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 280px;
 
   @media (width >= 768px) {
     width: 500px;
@@ -16,11 +16,12 @@
 .nav__list {
   display: none;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   list-style-type: none;
   padding: 0;
   margin: 0;
   background-color: $primary-color;
+  box-shadow: 35vw 0 $primary-color, -35vw 0 $primary-color;
 
   &--nojs {
     display: flex;
@@ -35,11 +36,13 @@
   @media (width >= 768px) {
     display: flex;
     flex-flow: row wrap;
+    position: static;
     width: 100%;
     min-width: 436px;
     justify-content: flex-end;
     margin-right: 4px;
     gap: 0 34px;
+    box-shadow: 0 0;
   }
 
   @media (width >= 1440px) {
@@ -50,7 +53,22 @@
 }
 
 .nav__list-item {
-  border-top: 1px solid #e6e6e6;
+  position: relative;
+
+  ::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ebebeb;
+    box-shadow: 30vw 0 #ebebeb, -30vw 0 #ebebeb;
+
+    @media (width > 767px) {
+      display: none;
+    }
+  }
 
   @media (width >= 768px) {
     border: none;

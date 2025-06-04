@@ -317,7 +317,7 @@
           </div>
           <a class="card__button button" href="#">Заказать</a>
         </li>
-        <li class="catalog__item catalog__item--more card">
+        <li class="catalog__item card card--more">
           <a class="card__link card__link--more" href="#" tabindex="-1">
             <h3 class="card__title card__title--more">Показать ещё 100500 товаров</h3>
           </a>
@@ -406,7 +406,10 @@
             srcset="images/mobile/map/map-mobile@2x.png 2x" alt="Карта города с отметкой магазина.">
         </picture>
       </div>
-      <div class="contacts__map-js contacts__map-js--index" id="map" style="width:100%; height:400px"></div>
+      <div class="contacts__map-nojs">
+        <div class="contacts__map-js contacts__map-js--index" id="map" style="width:100%; height:400px"></div>
+        </div>
+        <div class="contacts-links-wrapper">
       <ul class="contacts__links contacts-links">
         <li class="contacts-links__item">
           <h2 class="visually-hidden">Наши ссылки</h2>
@@ -439,6 +442,7 @@
           </a>
         </li>
       </ul>
+    </div>
     </section>
   </footer>
 </body>

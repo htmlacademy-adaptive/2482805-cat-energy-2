@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 14px 0;
+  padding: 15px 0;
   margin: 0 auto;
   border-top: 1px solid #e6e6e6;
 
@@ -16,12 +16,12 @@
 
   @media (width >= 1440px) {
     width: 1220px;
-    padding: 78px 0 0;
+    padding: 74px 0 0;
   }
 }
 
 .catalog__title {
-  width: 100%;
+  width: 320px;
   display: block;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -29,11 +29,19 @@
   line-height: 36px;
   color: #000000;
   text-align: start;
-  margin: 0;
+  margin: 0 auto;
   padding: 12px 20px 40px;
 
 
   @media (width >= 768px) {
+    width: 80%;
+    padding: 0 0 40px;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+  }
+
+  @media (width >= 1440px) {
     width: 80%;
     padding: 0 0 40px;
     font-size: 60px;
@@ -43,13 +51,14 @@
 
 .catalog__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   list-style-type: none;
   padding: 0;
   margin: 0;
 
 
   @media (width >= 768px) {
+    flex-direction: row;
     margin-top: 55px;
     gap: 60px;
     row-gap: 70px;
