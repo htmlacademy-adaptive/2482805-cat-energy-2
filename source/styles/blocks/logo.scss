@@ -4,7 +4,7 @@
   padding-bottom: 4;
   position: relative;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 174px;
     padding: 0;
   }
@@ -30,14 +30,14 @@
 .logo__picture {
   margin-top: 1px;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     margin: 0;
     position: absolute;
     top: -89%;
     left: 0;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     position: absolute;
     left: 0;
     top: -17px;
@@ -48,11 +48,11 @@
   margin-left: 55px;
   margin-top: 0;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     margin-left: 73px;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 118px;
     height: 25px;
     margin: 0;

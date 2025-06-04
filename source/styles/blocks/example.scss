@@ -6,7 +6,7 @@
   background-color: $secondary-color;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 100%;
     margin: 0;
     flex-flow: row wrap;
@@ -18,7 +18,7 @@
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 100%;
     padding: 70px 0 0;
     margin: 0 auto;
@@ -31,7 +31,7 @@
   margin: 0 auto;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     display: flex;
     width: 708px;
     margin: 0 auto;
@@ -40,7 +40,7 @@
     flex-direction: column;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     display: flex;
     flex-direction: row;
     width: 1220px;
@@ -51,14 +51,14 @@
 
 
 .example__text-wrapper {
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -75,13 +75,13 @@
   text-align: start;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 60%;
     font-size: 60px;
     line-height: 60px;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 70%;
   }
 }
@@ -93,13 +93,13 @@
   text-align: start;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 100%;
     margin-top: 60px;
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 433px;
     margin-top: 146px;
   }
@@ -114,7 +114,7 @@
   margin-top: 20px;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 367px;
     margin-top: 55px;
     justify-content: space-between;
@@ -122,7 +122,7 @@
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 366px;
     margin-top: 68px;
   }
@@ -140,7 +140,7 @@
   border-radius: 3px;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 162px;
     padding-bottom: 20px;
   }
@@ -155,7 +155,7 @@
   color: #000000;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     font-size: 30px;
     line-height: 37px;
   }
@@ -171,7 +171,7 @@
   background-color: $secondary-color;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 140px;
     font-size: 14px;
     line-height: 14px;
@@ -181,7 +181,7 @@
     left: 10px;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     background-color: $secondary-color;
     bottom: -6px;
   }
@@ -199,12 +199,7 @@
   margin: 34px 0 0 47px;
   column-gap: 5px;
 
-  @media (width > 320px) {
-    margin: 34px auto 0;
-  }
-
-
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
     width: 180px;
@@ -218,7 +213,7 @@
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     display: flex;
     flex-direction: row;
     width: 327px;

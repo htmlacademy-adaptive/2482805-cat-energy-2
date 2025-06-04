@@ -6,13 +6,13 @@
   flex-grow: 1;
   justify-content: space-between;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 100%;
     padding: 40px 30px;
     align-items: flex-end;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 1220px;
     margin: 0 auto;
     position: relative;
@@ -21,24 +21,14 @@
   }
 }
 
-.header-container {
-  width: 100%;
-
-  @media (width >= 1440px) {
-    width: 1220px;
-    margin: 0 auto;
-  }
-}
-
-
-.header-index {
+.header--index {
   padding: 10px 0 4px;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     padding: 40px 30px 0;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 100%;
     position: relative;
     padding: 72px 110px 1px;
@@ -65,6 +55,15 @@
   }
 }
 
+.header__container {
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -75,7 +74,7 @@
   margin: 0 auto;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     width: 708px;
@@ -83,7 +82,7 @@
     align-items: start;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     display: flex;
     width: 1220px;
     align-items: start;
@@ -123,7 +122,7 @@
     background-position: right;
   }
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }

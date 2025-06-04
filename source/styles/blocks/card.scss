@@ -7,7 +7,7 @@
   margin: 0 auto;
   justify-content: space-between;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 324px;
     flex-direction: column;
     padding: 0 37px 40px;
@@ -16,7 +16,7 @@
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 245px;
     flex-direction: column;
     padding: 0 37px 40px;
@@ -28,16 +28,15 @@
   &--more {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid $secondary-color;
 
-    @media (width >= 768px) {
+    @media (min-width: 768px) {
       background-image: none;
       justify-content: flex-start;
       outline: 2px solid $secondary-color;
       margin-top: 73px;
     }
 
-    @media (width >= 1440px) {
+    @media (min-width: 1440px) {
       margin-top: 68px;
       padding-bottom: 28px;
     }
@@ -54,7 +53,7 @@
   background-color: #ebebeb;
   box-shadow: 30vw 0 #ebebeb, -30vw 0 #ebebeb;
 
-  @media (width > 767px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -63,7 +62,7 @@
   display: block;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 100%;
     box-shadow: 0 0;
   }
@@ -71,14 +70,14 @@
   &--more {
     position: relative;
 
-    @media (width >= 768px) {
+    @media (min-width: 768px) {
       display: block;
       width: 170px;
       margin: 48px auto 0;
       padding-top: 110px;
     }
 
-    @media (width >= 1440px) {
+    @media (min-width: 1440px) {
       padding-top: 100px;
       margin-top: 48px;
     }
@@ -98,7 +97,7 @@
   left: 45%;
   background-color: #d3d3d3;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 60px;
     height: 60px;
     top: 0;
@@ -126,7 +125,7 @@
     margin: 10px 0 0 36px;
   }
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 170px;
     margin: 1px 0 0 40px;
 
@@ -136,7 +135,7 @@
     }
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 169px;
     margin: 2px 0 5px;
 
@@ -165,13 +164,13 @@
   flex-direction: column;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 250px;
     margin: 0 auto;
   }
 
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 170px;
   }
 }
@@ -188,7 +187,7 @@
   margin: 2px 0 14px 1px;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 60%;
     font-size: 20px;
     line-height: 24px;
@@ -197,7 +196,7 @@
     padding-right: 1px;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     width: 90%;
     margin: 14px auto 24px;
   }
@@ -229,7 +228,7 @@
   margin: 59px auto 0;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 136px;
     font-size: 20px;
     line-height: 24px;
@@ -247,7 +246,7 @@
   margin: 0;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     font-size: 16px;
     line-height: 20px;
     border-bottom: 1px solid #cdcdcd;
@@ -255,7 +254,7 @@
     margin-bottom: 7px;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     &:last-child {
       padding-bottom: 10px;
     }
@@ -266,7 +265,7 @@
   width: 50px;
   text-align: start;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 100px;
   }
 }
@@ -276,7 +275,7 @@
   text-align: end;
   margin: 0;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 70px;
   }
 
@@ -288,7 +287,7 @@
     margin: 8px auto 0;
 
 
-    @media (width >= 768px) {
+    @media (min-width: 768px) {
       width: 170px;
       font-size: 16px;
       line-height: 18px;
@@ -296,7 +295,7 @@
       margin-top: 23px;
     }
 
-    @media (width >= 1440px) {
+    @media (min-width: 1440px) {
       width: 170px;
       font-size: 16px;
       line-height: 18px;
@@ -310,13 +309,13 @@
   margin-top: 20px;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 250px;
     margin: 0 auto;
     margin-top: 26px;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     margin-top: 25px;
     width: 169px;
   }
@@ -326,11 +325,11 @@
     color: #444444;
     background-color: $secondary-color;
 
-    @media (width >= 768px) {
+    @media (min-width: 768px) {
       margin-top: 82px;
     }
 
-    @media (width >= 1440px) {
+    @media (min-width: 1440px) {
       margin-top: 92px;
     }
 

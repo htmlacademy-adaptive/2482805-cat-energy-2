@@ -1,4 +1,4 @@
-.contacts__address {
+.address {
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -13,16 +13,14 @@
     background-color: $secondary-color;
   }
 
-
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     width: 628px;
     padding: 61px 0;
     margin: 0 auto;
-    background-color: $primary-color;
     box-shadow: 0 0;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     z-index: 2;
     background-color: #ffffff;
     gap: 87px;
@@ -48,7 +46,7 @@
   padding-left: 20px;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     font-size: 20px;
     line-height: 26px;
     padding: 0;
@@ -65,7 +63,7 @@
   justify-content: space-evenly;
 
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
     font-size: 16px;
@@ -76,7 +74,7 @@
     align-items: flex-end;
   }
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     text-align: start;
     align-items: flex-start;
   }
