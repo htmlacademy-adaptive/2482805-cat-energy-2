@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 0 0 21px;
+  padding: 0;
   margin: 0 auto;
   background-color: $secondary-color;
 
@@ -67,10 +67,12 @@
 
 .contacts__links-wrapper {
   width: 100%;
+  padding: 0 0 20px;
   background-color: $secondary-color;
 
   @media (min-width: 768px) {
     width: 100%;
+    padding: 0;
     margin: 0;
   }
 }
@@ -88,7 +90,7 @@
     width: 706;
     display: flex;
     flex-wrap: wrap;
-    padding: 52px 0 55px 2px;
+    padding: 52px 0 52px 2px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: start;
@@ -97,7 +99,7 @@
 
   @media (min-width: 1440px) {
     width: 1440px;
-    padding: 65px 110px;
+    padding: 65px 110px 64px;
     display: flex;
     align-items: center;
   }
