@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const screenWidth = window.innerWidth;
 
     let iconSize;
-    let IconOffset = [-25, -60];
+    let IconOffset = [-25, -43];
 
     if (screenWidth >= 768 && screenWidth < 1440) {
       iconSize = [113, 106];

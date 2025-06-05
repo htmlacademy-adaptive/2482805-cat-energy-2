@@ -54,12 +54,15 @@
 
 
   @media (min-width: 768px) {
+    position: relative;
     width: 416px;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
     text-align: start;
     margin: 0;
+    background-color: transparent;
+    z-index: 3;
   }
 
 
